@@ -2,9 +2,12 @@
 2) User Stories in github agile kanban board
 3) Add stories to github
 4) model diagram lucid chart for flow of data
+5) include social media sign in (time permitting)
+6) 
 
 - stripe payment system
 - amazon aws services
+- django allauth (authorisation functionality)
 - 
 
 
@@ -14,11 +17,11 @@ Celebrate with Hamper is an e-commerce website built to showcase their restauran
 
 This is a full-stack project built using Python + Django, HTML, CSS and JavaScript and is for educational purposes. 
 
-![Responsive Mockup](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/responsive.jpg)
+![Responsive Mockup](x)
 
 ## Showcase
 
-A deployed link to the website can be found [here](https://arthuralfie.herokuapp.com/)
+A deployed link to the website can be found [here](x)
 
 ## User Experience (UX)
 
@@ -88,12 +91,12 @@ A deployed link to the website can be found [here](https://arthuralfie.herokuapp
   - The header and nav bar are made up using the leading colour of the site, that being Oxford Blue. Dark Sienna drives the visual presence of the icons onsite, with headings complimented in Charcoal. Both Cadet Blue Crayola and Papaya Whip are supporting colours used sparingly in the lower levels such as blog details.
   - The button colours led by Bootstraps classes with Secondary a leading complimentary choice. Danger colour has been used appropriately with the cancelling of reservation button, likewise 'update reservation' in their Info class colour.
   - Each clickable button or heading link with have hover effects be it underline on heading links or colour change on the buttons. This reinforces the clickable element.
-  ![Site Colour Scheme](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/restaurant_colours.png)
+  ![Site Colour Scheme](x)
  
  ### Typography
   - Google Fonts has been used to stylise the text on site with headings and paragraphs complementing each other. Both modern styles with the headings eye catching and paragraphs content clear to read on smaller screens.
-  - The [Lilita One](https://fonts.google.com/specimen/Lilita+One?preview.size=61&thickness=8&query=Lilita+One) font is used for the headings throughout the site with Cursive as the fallback.
-  - The [PT Sans Narrow](https://fonts.google.com/specimen/PT+Sans+Narrow?preview.size=61&query=pt+sans) font is used for the content paragraphs of the site with Sans-Serif as the fallback.
+  - The [Lilita One](x) font is used for the headings throughout the site with Cursive as the fallback.
+  - The [PT Sans Narrow](x) font is used for the content paragraphs of the site with Sans-Serif as the fallback.
  
  ### Imagery
   - Underneath the navigation bar, there is a Bootstrap carousel which rotates through three images. These are focused on served food within a restaurant sitting and provide a visual representation of the website. This is stored in the Cloudinary database.
@@ -111,7 +114,7 @@ A deployed link to the website can be found [here](https://arthuralfie.herokuapp
 ## Wireframe
  - Following the initial user stories, design and features. I mocked up the wireframe of the site to incorporate all must have pages and features. 
  - I used a desktop approach for this as it would be the largest screen size to make the content work. Bootstrap grid system helps to flex the content to mobile, so I felt it would be beneficial to design using the most challenging screen size for the project, larger desktop.
-   - [Wireframe Link](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/arthur-alfies-restaurant.png)
+   - [Wireframe Link](x)
 
 ## Current Features
 
@@ -120,67 +123,67 @@ A deployed link to the website can be found [here](https://arthuralfie.herokuapp
  - This section allows the user to easily navigate from page to page without having to use the back button or relooping back to the home page.
  - If the user is logged in, the 'register' and 'log in' pages will revert to 'my bookings' and 'log out'. The 'my bookings' page is restricted so that only logged in users can see. Likewise when 'log in' changes to 'log out', this is a clear indication to the user of their status (signed in or out).
  
- ![Nav Bar](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/nav.JPG)
+ ![Nav Bar](x)
  
  ### Carousel and Opening Paragraph
  - A carousel image section provides the user with inspirational and relevant content to the reason of the site. The carousel rotates through three images which keeps the user interested and on the site for longer. 
  - Supporting the image carousel is a page header below with supporting text. This is crucial as it informs the user about which page they are on and the reason for the page.
 
- ![Opening Content](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/carousel.JPG)
+ ![Opening Content](x)
 
  ### Detail Navigation
  - An additional navigation section has been built into the home page which supports those users who require further information about the features and pages of the site without having to navigation to every page.
  - A title when clicked on navigates to the relevant page, with an underline hover effect. Each page is supported with a relevant icon, again a further reference point, for those users who prefer or need visual hints.
 
- ![Detail Nav](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/detail-nav.JPG)
+ ![Detail Nav](x)
 
  ### Latest News
  - A snapshot of the blogs that have been posted by the restaurant. The users who first land on the page will get a feel for the type of blog / news content that comes out from the restaurant without having to navigate to the blog page specifically.
  - This data is stored in the database and is updated when the restaurant admin post a new blog article. 
 
- ![Latest News](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/news.JPG)
+ ![Latest News](x)
 
  ### Opening Hours and Directions
  - The final piece of information you would expect from a restaurant site, opening and closing hours along with directions to the restaurant.
  - Google Maps API has been used to generate the iframe map. The user can interact with the map and click to open a new tab to take them directly to Google Maps.
 
- ![Hours and Directions](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/opening.JPG)
+ ![Hours and Directions](x)
  
  ### The Footer
  - The footer section houses icons of the relevant social media platforms available which allows the user to click on, thus directing them to the relevant social page. The link will open up in a new tab as it gives the user the option to remain on the current page or click onto the social media tab that has just opened.
  - The footer encourages the user to keep connected via social media. It also gives the user confidence of the business / brand given the multiple social platforms used.
  - The footer is responsive and featured at the bottom on all four pages. The footer is identical on each page to provide a consistent look and ease of navigation.
 
- ![Footer](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/footer.JPG)
+ ![Footer](x)
  
  ### Menu Page
  - A Bootstrap accordion component houses all the menu information for the user. The menu categories make up the clickable expand sections which allows the user to only open up the category of food they are interested in. The category heading is also collapsible.
  - Restaurant Admin manage the data shown here to the user. All changes made to both categories or meals will be automatically shown within the accordion.
  - The meal 'view details' button, when clicked on will take the user to the meal detail page showing more information on that specific meal.
 
- ![Menu](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/menu.JPG)
+ ![Menu](x)
 
  ### Book Now Page
  - The Book Now page consists of a form that the user will fill in and submit to the restaurant. Once submitted a message will appear advising the user of the table booking submission and how the restaurant will contact you to confirm, be it via phone if not a signed in user, or via 'My Booking' page, reservation status field.
  - If the user misses a required field the form will advise the user that details are needed and only once the form has been completed, will it get submitted to the restaurant.
 
- ![Book Now](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/book.JPG)
+ ![Book Now](x)
 
  ### Newsletter Page
  - On the Newsletter page a form is presented and once fully completed and submitted will sign up the provided email address to the restaurants newsletter subscription.
 
- ![Newsletter](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/newsletter.JPG) 
+ ![Newsletter](x) 
 
  - An email will be sent to the address provided by the user to confirm their sign up.
  
- ![Email](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/email.JPG)
+ ![Email](x)
 
  ### Blog Page
  - Restaurant posted blogs are shown to users on the Blog page. Every blog is shown on an individual card with a supporting image, author of the blog from the restaurant, the date of the post, how many likes and a small exert on the content. 
  - Each blog title and exert can be clicked on to take the user to the blog detail page. 
  - If the user is logged in then they will be able to 'like' the blog post on the detail page. This gives the restaurant owners good feedback about which news blogs are liked and those that are not. This in turn will help the restaurant to know what their target audience are interested in hearing about.
 
- ![Blog](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/blog.JPG)
+ ![Blog](x)
 
  ### Register, Log In / Out Pages
  - If users create an account it allows them to 'like' blog posts and also gives them additional functionality regarding their table bookings. On all pages, a message will show providing the user with feedback on their actions.
@@ -188,9 +191,9 @@ A deployed link to the website can be found [here](https://arthuralfie.herokuapp
  - The log in page asks for the username and password of the account so the user can sign in and interact with the blogs and future bookings.
  - The log out page allows the user to log out of the site.
 
- ![Register](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/register.JPG)
- ![Log In](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/log-in.JPG)
- ![Log Out](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/log-out.JPG)
+ ![Register](x)
+ ![Log In](x)
+ ![Log Out](x)
 
  ### My Bookings Page
  - The 'My Bookings' page will show the signed in user, only their bookings made via the 'Book Now' form. 
@@ -198,7 +201,7 @@ A deployed link to the website can be found [here](https://arthuralfie.herokuapp
  - There is a button to 'Book a Table' for user to navigate to the booking form page allowing ease of navigation for all things bookings.
  - The details of each booking is shown in a table format, more importantly for the user, they will see the status of the booking, and whether its been confirmed by the restaurant.
 
- ![Bookings](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/bookings.JPG)
+ ![Bookings](x)
  
  ### Responsive Site
  - The site uses Bootstraps grid layout system to create a responsive site across the various screen sizes. It is a mobile first flexbox grid. Where content flexes it will span down the screen without compromise to the content.
@@ -246,20 +249,22 @@ A deployed link to the website can be found [here](https://arthuralfie.herokuapp
 ## Testing
  - I used a combination of manual and automated testing to ensure the application works as intended and meets the users demands. Each user story was applied to the testing, checking that first time users, returning users, frequent users and admin users saw and used the site as intended.
  - Whilst understanding my user stories, I used the in-built github projects, kanban board, to identify the key building blocks to my site, which aided my progress throughout the build. This made sure that I developed a site fit for my users and when testing the site, the outcome was as expected.
- - The Kanban board can be found on this [link](https://github.com/Oliver-RC/DjangoBookings/projects/1)
- ![Kanban Board](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/agile-tool.JPG)
+ - The Kanban board can be found on this [link](x)
+ ![Kanban Board](x)
+ - The Lucid chart can be found on this [link](x)
+ ![Lucid Chart](x)
  
  ### Manual Testing
   - Myself and three other family members tested the application. We used a checklist to check all pages loaded correctly with the content expected, the interactive elements worked as intended i.e. buttons, links etc, the forms submitted and authentication worked. The manual tests throughly assess the code written in html, css, python and javascript. Please see the following manual tests checklist and outcome:
-  ![Manual Test Checklist](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/test-checklist.JPG)
-  [Manual Test Link](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/manual-testing-checklist.xlsx)
+  ![Manual Test Checklist](x)
+  [Manual Test Link](x)
   - Examples of manual testing:
    - Booking form valid submission error checked:
-   ![Booking form valid submission error checked](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/test-1.JPG)
+   ![Booking form valid submission error checked](x)
    - Booking form valid form submitted message confirming:
-   ![Booking form valid form submitted message confirming](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/test-2.JPG)
+   ![Booking form valid form submitted message confirming](x)
    - My Bookings page, delete a booking with secondary ask:
-   ![My Bookings page, delete a booking with secondary ask](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/test-3.JPG)
+   ![My Bookings page, delete a booking with secondary ask](x)
   - The devices used to test the application on were:
     - Samsung Note 10
     - Samsung S7
@@ -290,11 +295,11 @@ A deployed link to the website can be found [here](https://arthuralfie.herokuapp
   
   #### HTML - 
    - All HTML validation was passed through the official W3C validator.
-   ![HTML Validation](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/w3c-html.JPG)
+   ![HTML Validation](x)
   
   #### CSS - 
    - No errors were found when passing through the official (Jigsaw) validator.
-   ![CSS Validation](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/w3c-css.JPG)
+   ![CSS Validation](x)
   
   #### JavaScript - 
    - JS Hint Checker was used to highlight any functional errors, none returned. Warning about using 'let', with it being available in ES6, however I am happy with my Javascript code functioning as intended.
@@ -307,13 +312,13 @@ A deployed link to the website can be found [here](https://arthuralfie.herokuapp
   #### Lighthouse - 
    - Tested the site on Google Developer Tools Lighthouse for desktop and mobile with good results on both. Performance, accessibility and SEO scored top marks. Best practices at 87 due to browser errors but nothing of concern which impacts the site useability and performance. On mobile, performance dropped to 87 due to image size. I have reformatted and reduced pixel sizes without compromising on desktop performance.
      - Desktop:
-       ![Lighthouse Results Desktop](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/lighthouse-desktop.JPG)
+       ![Lighthouse Results Desktop](x)
      - Mobile:
-       ![Lighthouse Results Mobile](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/lighthouse-mobile.JPG)
+       ![Lighthouse Results Mobile](x)
   
   #### Wave - 
    - Tested on [Wave](https://wave.webaim.org/) which helped me with accessibility, making sure my layout and design worked well with screen readers. No errors detected or contrast errors.
-   ![Wave](https://github.com/Oliver-RC/DjangoBookings/blob/main/assets/wave.JPG)
+   ![Wave](x)
  
  ### Bugs and Fixes
   - When I initially deployed the app to Heroku, the main carousel images in the base.html file did not load nor did many css properties. I had to remove the image files stored in the static folder and upload to cloudinary, then amend the image source link.
@@ -335,7 +340,7 @@ A deployed link to the website can be found [here](https://arthuralfie.herokuapp
  
  ### Cloning
   - To make a local clone:
-   - Log into GitHub or create an account and navigate to the gitpod repository [here](https://github.com/Oliver-RC/DjangoBookings).
+   - Log into GitHub or create an account and navigate to the gitpod repository [here](x).
    - Under the repository name, above the list of files, click on a button called 'Clone'.
    - If cloning with HTTPS, make sure HTTPS is underlined and then click on the clipboard icon to copy. Once clicked the icon will turn to a tick.
    - Open your local IDE open the terminal.
