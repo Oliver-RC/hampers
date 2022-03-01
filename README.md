@@ -8,6 +8,7 @@
 - stripe payment system
 - amazon aws services
 - django allauth (authorisation functionality)
+- favicon.io
 - 
 
 
