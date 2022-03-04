@@ -9,7 +9,7 @@
 - amazon aws services
 - django allauth (authorisation functionality)
 - favicon.io
-- 
+- reference boutiquo ado as resource and inspirational project
 
 
 # Celebrate with Hampers
