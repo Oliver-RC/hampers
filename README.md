@@ -2,7 +2,8 @@
 2) Update User Stories in github agile kanban board
 4) model diagram lucid chart for flow of data
 5) include social media sign in (time permitting)
-6) 
+6) fix nav on mobile
+7) 
 
 - stripe payment system
 - amazon aws services

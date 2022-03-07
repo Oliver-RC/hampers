@@ -41,9 +41,17 @@
     </div>
 </li>
 <li class="list-inline-item">
+    <a href="#" class="text-dark d-block d-lg-none">
+      <div class="text-center">
+        <div><i class="fas fa-star fa-lg"></i></div>
+        <p class="my-0">Saved Items</p>
+      </div>
+    </a>
+</li>
+<li class="list-inline-item">
     <a class="{% if grand_total %}font-weight-bold{% else %}text-dark{% endif %} d-block d-lg-none" href="">
         <div class="text-center">
-            <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+            <div><i class="fas fa-shopping-basket fa-lg"></i></div>
             <p class="my-0">
                 {% if grand_total %}
                     £{{ grand_total|floatformat:2 }}
