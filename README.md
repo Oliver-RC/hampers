@@ -1,6 +1,5 @@
 1) Wireframes
-2) User Stories in github agile kanban board
-3) Add stories to github
+2) Update User Stories in github agile kanban board
 4) model diagram lucid chart for flow of data
 5) include social media sign in (time permitting)
 6) 
