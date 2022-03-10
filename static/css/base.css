@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    height: calc(100vh - 164px);
+    height: calc(100vh - 198px);
     color: #6c757d;
     font-family: 'Merriweather', serif;
 }
@@ -33,6 +33,6 @@ body {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 198px;
     }
 }
