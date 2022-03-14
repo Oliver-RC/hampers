@@ -12,6 +12,11 @@ body {
     width: fit-content;
 }
 
+.carousel-img {
+    width: 100%;
+    height: 50vh;
+}
+
 .back-top-button {
     height: 42px;
     width: 42px;

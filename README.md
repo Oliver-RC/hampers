@@ -3,7 +3,7 @@
 4) model diagram lucid chart for flow of data
 5) include social media sign in (time permitting)
 6) fix nav on mobile
-7) 
+7) shopping bag bug - to fix at the end
 
 - stripe payment system
 - amazon aws services
