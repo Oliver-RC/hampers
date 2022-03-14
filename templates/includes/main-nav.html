@@ -17,11 +17,11 @@
                 Gift By Occasion
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Birthdays</a>
-                <a href="" class="dropdown-item">Anniversarys</a>
-                <a href="" class="dropdown-item">Thank You</a>
-                <a href="" class="dropdown-item">Celebration</a>
-                <a href="" class="dropdown-item">Seasonal</a>
+                <a href="{% url 'products' %}?occasion=birthdays" class="dropdown-item">Birthdays</a>
+                <a href="{% url 'products' %}?occasion=anniversarys" class="dropdown-item">Anniversarys</a>
+                <a href="{% url 'products' %}?occasion=thank_you" class="dropdown-item">Thank You</a>
+                <a href="{% url 'products' %}?occasion=celebrations" class="dropdown-item">Celebration</a>
+                <a href="{% url 'products' %}?occasion=seasonal" class="dropdown-item">Seasonal</a>
             </div>
         </li>
 
@@ -30,12 +30,12 @@
                 By Category
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">All Products</a>
-                <a href="" class="dropdown-item">Seasonal Food Hampers</a>
-                <a href="" class="dropdown-item ">Alcohol Hampers</a>
-                <a href="" class="dropdown-item ">Chocolate Hampers</a>
-                <a href="" class="dropdown-item ">Pamper Hampers</a>
-                <a href="" class="dropdown-item ">Baby &amp; Kids Hampers</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=seasonal_food_hamper" class="dropdown-item">Seasonal Food Hampers</a>
+                <a href="{% url 'products' %}?category=alcohol_hamper" class="dropdown-item ">Alcohol Hampers</a>
+                <a href="{% url 'products' %}?category=chocolate_hamper" class="dropdown-item ">Chocolate Hampers</a>
+                <a href="{% url 'products' %}?category=pamper_hamper" class="dropdown-item ">Pamper Hampers</a>
+                <a href="{% url 'products' %}?category=baby_and_kids_hamper" class="dropdown-item ">Baby &amp; Kids Hampers</a>
             </div>
         </li>
 
@@ -44,7 +44,7 @@
                 By Price
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                 <a href="" class="dropdown-item">Hampers up to £20</a>
                 <a href="" class="dropdown-item ">Hampers £20 to £60</a>
                 <a href="" class="dropdown-item ">Hampers £60 to £80</a>
@@ -58,7 +58,7 @@
                 Bestsellers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Rating</a>
                 <a href="" class="dropdown-item ">By Category</a>
