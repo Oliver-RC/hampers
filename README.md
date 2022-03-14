@@ -10,6 +10,7 @@
 - django allauth (authorisation functionality)
 - favicon.io
 - reference boutiquo ado as resource and inspirational project
+- jquery for javascript sort functionality
 
 
 # Celebrate with Hampers

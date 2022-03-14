@@ -12,6 +12,17 @@ body {
     width: fit-content;
 }
 
+.back-top-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.back-top-link {
+    cursor: pointer;
+}
 
 /* --- Media Queries --- */
 
