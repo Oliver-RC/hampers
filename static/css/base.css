@@ -104,7 +104,23 @@ select option[value=""] {
 }
 
 /* --- Profile --- */
+.profile-form-input,
+.form-control {
+    color: #6c757d;
+}
 
+.profile-form-input::placeholder {
+    color: #aab7c4;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #6c757d;
+}
+
+#id_default_country option:first-child {
+    color: #aab7c4;
+}
 
 /* --- Bootstrap Toasts --- */
 .message-container {
