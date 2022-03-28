@@ -99,6 +99,9 @@ select option[value=""] {
     height: 100%;
 }
 
+/* --- Profile --- */
+
+
 /* --- Bootstrap Toasts --- */
 .message-container {
     position: fixed;
