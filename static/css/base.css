@@ -335,12 +335,16 @@ select option[value=""] {
 }
 
 /* Smaller icons & text for navbar on small mobile */
-@media (max-width: 410px) {
+@media (max-width: 450px) {
     .mob {
         font-size: 0.6rem;
     }
 
     .navbar-toggler {
+        font-size: 0.6rem;
+    }
+
+    .bag-mob {
         font-size: 0.6rem;
     }
 }
