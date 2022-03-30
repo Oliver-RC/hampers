@@ -155,12 +155,17 @@
           {% endfor %}
         </div>
       {% endif %}
-
+      
+      <!-- Page Header -->
       {% block page_header %}
       {% endblock %}
 
+      <!-- Page Content -->
       {% block content %}
       {% endblock %}
+
+      <!-- Page Footer -->
+      {% include 'includes/footer.html' %}
 
       {% block postloadjs %}
         <script type="text/javascript">

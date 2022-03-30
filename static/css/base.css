@@ -332,6 +332,10 @@ select option[value=""] {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+    .mob-center {
+        text-align: center;
+    }
 }
 
 /* Smaller icons & text for navbar on small mobile */
