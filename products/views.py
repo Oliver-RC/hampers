@@ -10,7 +10,7 @@ from .forms import ProductForm
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all()
+    products = Product.objects.all().filter(is_available=True)
     query = None
     occasions = None
     categories = None
@@ -25,7 +25,7 @@ def all_products(request):
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
-                sortkey = 'category__name'            
+                sortkey = 'category__name'
             if sortkey == 'occasion':
                 sortkey = 'occasion__name'
             if 'direction' in request.GET:
