@@ -67,6 +67,8 @@ def checkout(request):
                         quantity=item_data,
                     )
                     order_line_item.save()
+                    product.stock -= order_line_item.quantity
+                    product.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
