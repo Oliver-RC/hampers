@@ -4,7 +4,8 @@
 5) include social media sign in (time permitting)
 6) fix nav on mobile
 7) shopping bag bug - to fix at the end
-8) OOS and product available functions added
+8) pagination?
+9) fix carousel and footer issue
 
 - stripe payment system
 - amazon aws services

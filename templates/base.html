@@ -56,7 +56,7 @@
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="logo-link text-decoration-none">
               <h1 class="text-dark my-0"><strong>Celebrate</strong> with</h2>
-              <h1 class="text-dark my-0"><strong> Hampers</strong> <i class="fas fa-gift text-dark"></i></h2>
+              <h1 class="text-dark my-0"><strong> Hampers</strong> <i class="fas fa-gift logo-color"></i></h2>
             </a>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -119,6 +119,13 @@
                 </a>
               </li>
             </ul>
+            <div class="mt-1">
+              {% if request.user.is_authenticated %}
+                <p class="text-right text-lg-right text-dark"><small>Welcome {{ user }}</small></p>
+              {% else %}
+                <p class="text-right text-lg-right text-dark"><small>Welcome Guest!</small></p>
+              {% endif %}
+            </div>
           </div>
         </div>
         <div class="row bg-white">
