@@ -36,7 +36,7 @@ body {
     cursor: pointer;
 }
 
-.card-img-top {
+.main-img {
     height: 220px;
     align-items: center;
     object-fit: cover;
@@ -45,6 +45,9 @@ body {
 input[name='q']::placeholder {
     color: #aab7c4;
 }
+
+/* --- Reviews, Star Ratings --- */
+
 
 /* --- Checkout --- */
 .StripeElement,
