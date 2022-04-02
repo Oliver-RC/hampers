@@ -3,8 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, Occasion
-from .forms import ProductForm
+from .models import Product, Category, Occasion, Reviews
+from .forms import ProductForm, ReviewForm
 
 
 def all_products(request):
@@ -146,3 +146,27 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted from the shop database')
     return redirect(reverse('products'))
+
+
+def review_submission(request, product_id):
+    url = request.META.get('HTTP_REFERER')
+    if request.method == 'POST':
+        try:
+            reviews_submission = Reviews.objects.get(user__id=request.user.id, product__id=product_id)
+            form = ReviewForm(request.POST, instance=reviews_submission)
+            form.save()
+            messages.success(request, 'Thank you - your review has been updated')
+            return redirect(url)
+        except Reviews.DoesNotExist:
+            form = ReviewForm(request.POST)
+            if form.is_valid():
+                data = Reviews()
+                data.subject = form.cleaned_data['subject']
+                data.star_rating = form.cleaned_data['star_rating']
+                data.review = form.cleaned_data['review']
+                data.ip = request.META.get('REMOTE_ADDR')
+                data.product_id = product_id
+                data.user_id = request.user.id
+                data.save()
+                messages.success(request, 'Thank you - your review has been submitted')
+                return redirect(url)
