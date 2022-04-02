@@ -9,7 +9,6 @@ class ProductAdmin(admin.ModelAdmin):
         'category',
         'occasion',
         'price',
-        'rating',
         'image',
         'stock',
         'is_available',
@@ -29,7 +28,21 @@ class OccasionAdmin(admin.ModelAdmin):
         'name',
     )
 
+class ReviewsAdmin(admin.ModelAdmin):
+    list_display = (
+        'product',
+        'subject',
+        'user',
+        'star_rating',
+        'updated',
+        'status',
+
+    )
+
+    ordering = ('updated',)
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Occasion, OccasionAdmin)
-admin.site.register(Reviews)
+admin.site.register(Reviews, ReviewsAdmin)

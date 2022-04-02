@@ -47,6 +47,10 @@ input[name='q']::placeholder {
 }
 
 /* --- Reviews, Star Ratings --- */
+.star-colour {
+    color: #5A4181;
+}
+
 .rate > input {
     display: none;
 }

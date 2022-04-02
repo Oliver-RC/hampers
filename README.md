@@ -6,6 +6,8 @@
 7) shopping bag bug - to fix at the end
 8) pagination?
 9) fix carousel and footer issue
+10) product reivews = check if user purchased?
+11) add more products
 
 - stripe payment system
 - amazon aws services

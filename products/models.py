@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Avg
 from profiles.models import UserProfile
 
 
@@ -35,7 +36,6 @@ class Product(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(max_digits=6, decimal_places=1, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     stock = models.IntegerField()
@@ -43,6 +43,13 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def averageRating(self):
+        rating = Reviews.objects.filter(product=self, status=True).aggregate(average=Avg('star_rating'))
+        avg = 0
+        if rating['average'] is not None:
+            avg = float(rating['average'])
+        return avg
 
 
 class Reviews(models.Model):
