@@ -1,5 +1,5 @@
 from django.db import models
-from django.db.models import Avg
+from django.db.models import Avg, Count
 from profiles.models import UserProfile
 
 
@@ -50,6 +50,13 @@ class Product(models.Model):
         if rating['average'] is not None:
             avg = float(rating['average'])
         return avg
+
+    def reviewCount(self):
+        rating = Reviews.objects.filter(product=self, status=True).aggregate(count=Count('id'))
+        count = 0
+        if rating['count'] is not None:
+            count = int(rating['count'])
+        return count
 
 
 class Reviews(models.Model):
