@@ -39,7 +39,7 @@ class ReviewsAdmin(admin.ModelAdmin):
 
     )
 
-    ordering = ('updated',)
+    ordering = ('-updated',)
 
 
 admin.site.register(Product, ProductAdmin)
