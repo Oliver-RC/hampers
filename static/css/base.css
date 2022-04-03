@@ -1,3 +1,5 @@
+/* --- Navigation & page template --- */
+
 html {
     height: 100%;
 }
@@ -12,7 +14,10 @@ body {
     width: fit-content;
 }
 
-.logo-color {
+.logo-color,
+.home-text,
+.home-link,
+.home-link:hover {
     color: #5A4181;
 }
 
@@ -20,6 +25,16 @@ body {
     width: 100%;
     height: 50vh;
     object-fit: cover;
+}
+
+.shop-button {
+    background-color: #5A4181;
+    color: white;
+}
+
+.shop-button:hover {
+    background-color: #6c757d;
+    color: white;
 }
 
 .back-top-button {

@@ -55,18 +55,16 @@
                         </small>
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
-                    <div class="col-12 col-lg-6">
-                        
-                    {% if request.user.is_authenticated %}
-                        {% if button %}
-                            <a href="{% url 'remove_saved_items' product.id %}" aria-label="Remove product from Saved Items" class="btn btn-outline-secondary"><i class="fas fa-heart"></i> Remove from Saved Items</a>
+                    <div class="col-12 col-lg-6 p-0 mt-3">
+                        {% if request.user.is_authenticated %}
+                            {% if button %}
+                                <a href="{% url 'remove_saved_items' product.id %}" aria-label="Remove product from Saved Items" class="btn btn-outline-secondary"><i class="fas fa-heart"></i> Remove from Saved Items</a>
+                            {% else %}
+                                <a href="{% url 'add_saved_items' product.id %}" aria-label="Add product to Saved Items" class="btn btn-outline-secondary"><i class="far fa-heart"></i> Add to Saved Items</a>
+                            {% endif %}
                         {% else %}
-                            <a href="{% url 'add_saved_items' product.id %}" aria-label="Add product to Saved Items" class="btn btn-outline-secondary"><i class="far fa-heart"></i> Add to Saved Items</a>
+                            <a href="{% url 'account_login' %}" aria-label="Sign In" class="btn btn-outline-secondary"><i class="far fa-heart"></i><small> Sign In to add to Saved Items</small></a>
                         {% endif %}
-                    {% else %}
-                        <a href="{% url 'account_login' %}" aria-label="Sign In" class="btn btn-outline-secondary"><i class="far fa-heart"></i><small> Sign In to add to Saved Items</small></a>
-                    {% endif %}
-
                     </div>
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}

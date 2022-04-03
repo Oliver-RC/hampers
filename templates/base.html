@@ -105,7 +105,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="{% url 'view_bag' %}" class="{% if grand_total %}text-primary font-weight-bold{% else %}text-dark{% endif %}">
+                <a href="{% url 'view_bag' %}" class="{% if grand_total %}home-text font-weight-bold{% else %}text-dark{% endif %}">
                   <div class="text-center">
                     <div><i class="fas fa-shopping-basket fa-lg"></i></div>
                     <p class="my-0">
@@ -121,9 +121,9 @@
             </ul>
             <div class="mt-1">
               {% if request.user.is_authenticated %}
-                <p class="text-right text-lg-right text-dark"><small>Welcome {{ user }}</small></p>
+                <p class="text-right text-lg-right home-text"><small>Welcome {{ user }}</small></p>
               {% else %}
-                <p class="text-right text-lg-right text-dark"><small>Welcome Guest!</small></p>
+                <p class="text-right text-lg-right home-text"><small>Welcome Guest!</small></p>
               {% endif %}
             </div>
           </div>
