@@ -70,7 +70,10 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    saved_items = savedListItems.objects.filter(user=request.user.id)[0].item.all()
+    if request.user.is_authenticated:
+        saved_items = savedListItems.objects.filter(user=request.user.id)[0].item.all()
+    else:
+        saved_items = []
     if product in saved_items:
         button = True
     else:
