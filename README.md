@@ -8,6 +8,7 @@
 9) fix carousel and footer issue
 10) product reivews = check if user purchased?
 11) add more products
+12) Ger support on add button
 
 - stripe payment system
 - amazon aws services

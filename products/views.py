@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.http import Http404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, Occasion, Reviews
+from .models import Product, Category, Occasion, Reviews, savedListItems
 from .forms import ProductForm, ReviewForm
 
 
@@ -69,11 +70,18 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    saved_items = savedListItems.objects.filter(user=request.user.id)[0].item.all()
+    if product in saved_items:
+        button = True
+    else:
+        button = False
     reviews = Reviews.objects.filter(product_id=product.id, status=True)
 
     context = {
         'product': product,
         'reviews': reviews,
+        'saved_items': saved_items,
+        'button': button
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -151,6 +159,8 @@ def delete_product(request, product_id):
 
 
 def review_submission(request, product_id):
+    """ Logged in user to submit a review on a product """
+
     url = request.META.get('HTTP_REFERER')
     if request.method == 'POST':
         try:
@@ -172,3 +182,54 @@ def review_submission(request, product_id):
                 data.save()
                 messages.success(request, 'Thank you - your review has been submitted')
                 return redirect(url)
+
+
+@login_required
+def saved_item_list(request):
+    """ User to access their saved item list """
+    try:
+        saved_items = savedListItems.objects.filter(user=request.user.id)[0]
+    except IndexError:
+        item_list = None
+    else:
+        item_list = saved_items.item.all()
+
+    if not item_list:
+        messages.info(request, 'Your saved items list is empty')
+
+    template = 'products/saved_items.html'
+    context = {
+        'item_list': item_list,
+        'saved_items': saved_items
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def add_saved_items(request, product_id):
+    """ user to add a product to their saved item list"""
+    item = get_object_or_404(Product, pk=product_id)
+    try:
+        saved_item = get_object_or_404(savedListItems, user=request.user.id)
+    except Http404:
+        saved_item = savedListItems.objects.create(user=request.user)
+    if item in saved_item.item.all():
+        messages.info(request, 'Your Saved Items contains this product already')
+    else:
+        saved_item.item.add(item)
+        messages.info(request, f'Added {item.name} to your Save Items')
+    return redirect(reverse('product_detail', args=[product_id]))
+
+
+@login_required
+def remove_saved_items(request, product_id):
+    """ user to remove a product to their saved item list"""
+    item = get_object_or_404(Product, pk=product_id)
+    saved_item = get_object_or_404(savedListItems, user=request.user.id)
+    if item in saved_item.item.all():
+        saved_item.item.remove(item)
+        messages.info(request, f'Remove {item.name} from your Save Items')
+    else:
+        messages.error(request, (f'{item.name} is not in your Save Items'))
+    return redirect(request.META.get('HTTP_REFERER'))

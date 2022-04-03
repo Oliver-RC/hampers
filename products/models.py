@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models import Avg, Count
 from profiles.models import UserProfile
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -76,3 +77,11 @@ class Reviews(models.Model):
 
     def __str__(self):
         return self.subject
+
+
+class savedListItems(models.Model):
+    """
+    A saved item list model to keep users saved items
+    """
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    item = models.ManyToManyField(Product, blank=True)

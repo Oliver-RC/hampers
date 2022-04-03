@@ -44,11 +44,11 @@
                                 <tr>
                                     <td>
                                         <a href="{% url 'order_history' order.order_number %}"
-                                        title="{{ order.order_number }}">
+                                        title="{{ order.order_number }}" class="link-colour">
                                             {{ order.order_number|truncatechars:6 }}
                                         </a>
                                     </td>
-                                    <td>{{ order.date }}</td>
+                                    <td><small>{{ order.date }}</small></td>
                                     <td>
                                         <ul class="list-unstyled">
                                             {% for item in order.lineitems.all %}
