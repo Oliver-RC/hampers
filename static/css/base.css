@@ -1,5 +1,4 @@
 /* --- Navigation & page template --- */
-
 html {
     height: 100%;
 }
@@ -318,7 +317,6 @@ select option[value=""] {
 }
 
 /* Product Admin Form */
-
 .btn-file {
     position: relative;
     overflow: hidden;
