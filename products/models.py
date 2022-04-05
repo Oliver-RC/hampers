@@ -41,6 +41,7 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
     stock = models.IntegerField()
     is_available = models.BooleanField(default=True)
+    sku_created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name
