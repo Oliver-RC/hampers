@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-w9v-9h1^2=cg^@jzb5%f^6ky5ws7#x5+(jq^k74apw3)_j0dd6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['celebrate-with-hampers.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -121,12 +121,17 @@ WSGI_APPLICATION = 'celebrate_with_hampers.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
