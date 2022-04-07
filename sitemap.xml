@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/accounts/login/?next=/products/saved_item_list/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/bag/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?sort=occasion&amp;direction=asc</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?category=seasonal_food_hamper</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?category=alcohol_hamper</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?category=chocolate_hamper</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?category=pamper_hamper</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?category=baby_and_kids_hamper</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?occasion=birthdays</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?occasion=anniversarys</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?occasion=thank_you</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?occasion=celebrations</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/?occasion=seasonal</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/15/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/14/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/13/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/12/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fsaved_item_list%2F</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/1/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/2/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/3/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/4/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/5/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/7/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/8/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/9/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/10/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/11/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/products/6/</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://celebrate-with-hampers.herokuapp.com/accounts/login/?next=%2Fproducts%2Fsaved_item_list%2F</loc>
+  <lastmod>2022-04-07T12:31:39+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
