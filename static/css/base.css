@@ -343,6 +343,11 @@ select option[value=""] {
     border-radius: 0;
 }
 
+/* --- Mailchimp --- */
+#mc_embed_signup {
+    padding: 0;
+}
+
 /* --- Media Queries --- */
 
 /* Larger container on xl screens */
