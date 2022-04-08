@@ -5,9 +5,8 @@ from django.contrib.auth.models import User
 
 
 class Category(models.Model):
-
     class Meta:
-        verbose_name_plural = 'Categories'
+        verbose_name_plural = "Categories"
 
     name = models.CharField(max_length=100)
     friendly_name = models.CharField(max_length=100, null=True, blank=True)
@@ -31,8 +30,12 @@ class Occasion(models.Model):
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
-    occasion = models.ForeignKey('Occasion', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey(
+        "Category", null=True, blank=True, on_delete=models.SET_NULL
+    )
+    occasion = models.ForeignKey(
+        "Occasion", null=True, blank=True, on_delete=models.SET_NULL
+    )
     sku = models.CharField(max_length=100, null=True, blank=True)
     name = models.CharField(max_length=100)
     description = models.TextField()
@@ -47,24 +50,27 @@ class Product(models.Model):
         return self.name
 
     def averageRating(self):
-        rating = Reviews.objects.filter(product=self, status=True).aggregate(average=Avg('star_rating'))
+        rating = Reviews.objects.filter(product=self, status=True).aggregate(
+            average=Avg("star_rating")
+        )
         avg = 0
-        if rating['average'] is not None:
-            avg = float(rating['average'])
+        if rating["average"] is not None:
+            avg = float(rating["average"])
         return avg
 
     def reviewCount(self):
-        rating = Reviews.objects.filter(product=self, status=True).aggregate(count=Count('id'))
+        rating = Reviews.objects.filter(product=self, status=True).aggregate(
+            count=Count("id")
+        )
         count = 0
-        if rating['count'] is not None:
-            count = int(rating['count'])
+        if rating["count"] is not None:
+            count = int(rating["count"])
         return count
 
 
 class Reviews(models.Model):
-
     class Meta:
-        verbose_name_plural = 'Reviews'
+        verbose_name_plural = "Reviews"
 
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
@@ -84,5 +90,6 @@ class savedListItems(models.Model):
     """
     A saved item list model to keep users saved items
     """
+
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     item = models.ManyToManyField(Product, blank=True)

@@ -19,52 +19,55 @@ def all_products(request):
     direction = None
 
     if request.GET:
-        if 'sort' in request.GET:
-            sortkey = request.GET['sort']
+        if "sort" in request.GET:
+            sortkey = request.GET["sort"]
             sort = sortkey
-            if sortkey == 'name':
-                sortkey = 'lower_name'
-                products = products.annotate(lower_name=Lower('name'))
-            if sortkey == 'category':
-                sortkey = 'category__name'
-            if sortkey == 'occasion':
-                sortkey = 'occasion__name'
-            if 'direction' in request.GET:
-                direction = request.GET['direction']
-                if direction == 'desc':
-                    sortkey = f'-{sortkey}'
+            if sortkey == "name":
+                sortkey = "lower_name"
+                products = products.annotate(lower_name=Lower("name"))
+            if sortkey == "category":
+                sortkey = "category__name"
+            if sortkey == "occasion":
+                sortkey = "occasion__name"
+            if "direction" in request.GET:
+                direction = request.GET["direction"]
+                if direction == "desc":
+                    sortkey = f"-{sortkey}"
             products = products.order_by(sortkey)
 
-        if 'occasion' in request.GET:
-            occasions = request.GET['occasion'].split(',')
+        if "occasion" in request.GET:
+            occasions = request.GET["occasion"].split(",")
             products = products.filter(occasion__name__in=occasions)
             occasions = Occasion.objects.filter(name__in=occasions)
 
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
+        if "category" in request.GET:
+            categories = request.GET["category"].split(",")
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-        if 'q' in request.GET:
-            query = request.GET['q']
+        if "q" in request.GET:
+            query = request.GET["q"]
             if not query:
-                messages.error(request, "No search content was entered, please try again")
-                return redirect(reverse('products'))
+                messages.error(
+                    request, "No search content was entered, please try again"
+                )
+                return redirect(reverse("products"))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
-    current_sorting = f'{sort}_{direction}'
+    current_sorting = f"{sort}_{direction}"
 
     context = {
-        'products': products,
-        'search_term': query,
-        'current_occasions': occasions,
-        'current_categories': categories,
-        'current_sorting': current_sorting,
+        "products": products,
+        "search_term": query,
+        "current_occasions": occasions,
+        "current_categories": categories,
+        "current_sorting": current_sorting,
     }
 
-    return render(request, 'products/products.html', context)
+    return render(request, "products/products.html", context)
+
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
@@ -81,13 +84,13 @@ def product_detail(request, product_id):
     reviews = Reviews.objects.filter(product_id=product.id, status=True)
 
     context = {
-        'product': product,
-        'reviews': reviews,
-        'saved_items': saved_items,
-        'button': button
+        "product": product,
+        "reviews": reviews,
+        "saved_items": saved_items,
+        "button": button,
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, "products/product_detail.html", context)
 
 
 @login_required
@@ -95,23 +98,25 @@ def add_product(request):
     """ Add a product to the shop """
 
     if not request.user.is_superuser:
-        messages.error(request, 'Error - only shop owners allowed')
-        return redirect(reverse('home'))
+        messages.error(request, "Error - only shop owners allowed")
+        return redirect(reverse("home"))
 
-    if request.method == 'POST':
+    if request.method == "POST":
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, 'Successfully added product to shop database')
-            return redirect(reverse('product_detail', args=[product.id]))
+            messages.success(request, "Successfully added product to shop database")
+            return redirect(reverse("product_detail", args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product - please ensure the form is valid')
+            messages.error(
+                request, "Failed to add product - please ensure the form is valid"
+            )
     else:
         form = ProductForm()
 
-    template = 'products/add_product.html'
+    template = "products/add_product.html"
     context = {
-        'form': form,
+        "form": form,
     }
 
     return render(request, template, context)
@@ -122,26 +127,28 @@ def edit_product(request, product_id):
     """ Edit a product in the shop """
 
     if not request.user.is_superuser:
-        messages.error(request, 'Error - only shop owners allowed')
-        return redirect(reverse('home'))
+        messages.error(request, "Error - only shop owners allowed")
+        return redirect(reverse("home"))
 
     product = get_object_or_404(Product, pk=product_id)
-    if request.method == 'POST':
+    if request.method == "POST":
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated product')
-            return redirect(reverse('product_detail', args=[product.id]))
+            messages.success(request, "Successfully updated product")
+            return redirect(reverse("product_detail", args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product - please ensure the form is valid')
+            messages.error(
+                request, "Failed to update product - please ensure the form is valid"
+            )
     else:
         form = ProductForm(instance=product)
-        messages.info(request, f'You are editing {product.name}')
+        messages.info(request, f"You are editing {product.name}")
 
-    template = 'products/edit_product.html'
+    template = "products/edit_product.html"
     context = {
-        'form': form,
-        'product': product,
+        "form": form,
+        "product": product,
     }
 
     return render(request, template, context)
@@ -152,38 +159,40 @@ def delete_product(request, product_id):
     """ Delete a product from the shop """
 
     if not request.user.is_superuser:
-        messages.error(request, 'Error - only shop owners allowed')
-        return redirect(reverse('home'))
+        messages.error(request, "Error - only shop owners allowed")
+        return redirect(reverse("home"))
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.success(request, 'Product deleted from the shop database')
-    return redirect(reverse('products'))
+    messages.success(request, "Product deleted from the shop database")
+    return redirect(reverse("products"))
 
 
 def review_submission(request, product_id):
     """ Logged in user to submit a review on a product """
 
-    url = request.META.get('HTTP_REFERER')
-    if request.method == 'POST':
+    url = request.META.get("HTTP_REFERER")
+    if request.method == "POST":
         try:
-            reviews_submission = Reviews.objects.get(user__id=request.user.id, product__id=product_id)
+            reviews_submission = Reviews.objects.get(
+                user__id=request.user.id, product__id=product_id
+            )
             form = ReviewForm(request.POST, instance=reviews_submission)
             form.save()
-            messages.success(request, 'Thank you - your review has been updated')
+            messages.success(request, "Thank you - your review has been updated")
             return redirect(url)
         except Reviews.DoesNotExist:
             form = ReviewForm(request.POST)
             if form.is_valid():
                 data = Reviews()
-                data.subject = form.cleaned_data['subject']
-                data.star_rating = form.cleaned_data['star_rating']
-                data.review = form.cleaned_data['review']
-                data.ip = request.META.get('REMOTE_ADDR')
+                data.subject = form.cleaned_data["subject"]
+                data.star_rating = form.cleaned_data["star_rating"]
+                data.review = form.cleaned_data["review"]
+                data.ip = request.META.get("REMOTE_ADDR")
                 data.product_id = product_id
                 data.user_id = request.user.id
                 data.save()
-                messages.success(request, 'Thank you - your review has been submitted')
+                messages.success(request, "Thank you - your review has been submitted")
                 return redirect(url)
 
 
@@ -198,13 +207,10 @@ def saved_item_list(request):
         item_list = saved_items.item.all()
 
     if not item_list:
-        messages.info(request, 'Your saved items list is empty')
+        messages.info(request, "Your saved items list is empty")
 
-    template = 'products/saved_items.html'
-    context = {
-        'item_list': item_list,
-        'saved_items': saved_items
-    }
+    template = "products/saved_items.html"
+    context = {"item_list": item_list, "saved_items": saved_items}
 
     return render(request, template, context)
 
@@ -218,11 +224,11 @@ def add_saved_items(request, product_id):
     except Http404:
         saved_item = savedListItems.objects.create(user=request.user)
     if item in saved_item.item.all():
-        messages.info(request, 'Your Saved Items contains this product already')
+        messages.info(request, "Your Saved Items contains this product already")
     else:
         saved_item.item.add(item)
-        messages.info(request, f'Added {item.name} to your Save Items')
-    return redirect(reverse('product_detail', args=[product_id]))
+        messages.info(request, f"Added {item.name} to your Save Items")
+    return redirect(reverse("product_detail", args=[product_id]))
 
 
 @login_required
@@ -232,7 +238,7 @@ def remove_saved_items(request, product_id):
     saved_item = get_object_or_404(savedListItems, user=request.user.id)
     if item in saved_item.item.all():
         saved_item.item.remove(item)
-        messages.info(request, f'Remove {item.name} from your Save Items')
+        messages.info(request, f"Remove {item.name} from your Save Items")
     else:
-        messages.error(request, (f'{item.name} is not in your Save Items'))
-    return redirect(request.META.get('HTTP_REFERER'))
+        messages.error(request, (f"{item.name} is not in your Save Items"))
+    return redirect(request.META.get("HTTP_REFERER"))

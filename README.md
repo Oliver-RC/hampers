@@ -9,6 +9,8 @@
 10) product reivews = check if user purchased?
 11) add more products
 12) Ger support on add button
+13) https://extendsclass.com/python-formatter.html
+
 
 - stripe payment system
 - amazon aws services
