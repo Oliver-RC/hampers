@@ -1,14 +1,3 @@
-1) Wireframes
-2) Update User Stories in github agile kanban board
-4) model diagram lucid chart for flow of data
-5) include social media sign in (time permitting)
-6) fix nav on mobile
-7) shopping bag bug - to fix at the end
-8) pagination?
-9) fix carousel and footer issue
-10) product reivews = check if user purchased?
-11) add more products
-12) Ger support on add button
 13) https://extendsclass.com/python-formatter.html
 
 
@@ -18,11 +7,22 @@
 - favicon.io
 - reference boutiquo ado as resource and inspirational project
 - jquery for javascript sort functionality
+- lucidchart
 
 
 # Celebrate with Hampers
 
-Celebrate with Hamper is an e-commerce website built to showcase their restaurant, allowing a wider target audience to discover what's on offer. There is a page showcasing their menu and latest blog articles. Furthermore users can register up to the site and log in to their account allowing them to 'like' blogs by the restaurant, providing the owners with subtle feedback on which blogs are the most popular. Users can book a table reservation and even sign up to their newsletter email subscription. Whilst signed in, the user is able to see their future table booking and has the functionality to edit, cancel or add.
+Celebrate with Hampers is an e-commerce gift shop website for customers seeking to buy gifts for all occasions online. Our USP is that you can not buy these products anywhere else online as they are hand made specifically for the Celebrate with Hampers customer. 
+
+Site users can browse the full product range and purchase items without creating an account. Users who wish to register for an account will be able to save items, post a review on products, save default payment and delivery information and refer back to their previous order history. 
+
+Store owners and site administrators have full CRUD ability to create, edit and remove products from the application, manage stock and product availability, sensor check customer reviews and remove from site and access customer orders.
+
+To test the checkout and card payment functionality, use: 
+postal code: 12345
+card number: 4242 4242 4242 4242 
+expiry date: 04/24
+CVC: 242 42424
 
 This is a full-stack project built using Python + Django, HTML, CSS and JavaScript and is for educational purposes. 
 
@@ -30,188 +30,245 @@ This is a full-stack project built using Python + Django, HTML, CSS and JavaScri
 
 ## Showcase
 
-A deployed link to the website can be found [here](x)
+A deployed link to the website can be found [here](https://celebrate-with-hampers.herokuapp.com/)
 
 ## User Experience (UX)
 
  ### User Stories
- - In the planning stages of the app, I used a UX approach by applying various user stories and the different stages of using the app, to create a list of builds needed to make the application fit for purpose, both for frontend users and backend admin users.
- - I used the Github Projects, Kanban tool as my agile tool to manage the planning and structure of the build.
+ - In the planning stages of the application, I used a UX approach by applying various user stories and the different stages of user journeys which helped me to create a list of builds needed to make the application fit for purpose, both for frontend users and backend admin users.
+ - I used the Github Projects, Kanban tool as my agile tool to manage the planning and structure of the build. [found here](https://github.com/Oliver-RC/hampers/projects/1)
+ - I also documented my key project tasks on excel whilst brainstorming site functionality aligning to my user stories. [found here](x)
 
   #### First Time Visitor Goals
-   1. As a first time visitor I want to understand what the site is about and who the site is intended for. Starting with the title and core content of the index page, these elements should give a clear idea.
+   1. As a first time visitor I want to understand what the site is about and who the site is intended for. Starting with the title and core content of the home page, these elements should give a clear idea and provide inspiration to purchase products available.
    2. As a first time visitor I want to be able to clearly navigate around the site knowing which page I am on and what information I should expect to find.
-   3. As a first time visitor the flow of each page should read top to bottom with the interactive content following suit. The home / index page should then allow the user to flow onto the next relevant page.
+   3. As a first time visitor the flow of each page should read top to bottom with the interactive content following suit. The home page should then allow the user to flow onto the next relevant page.
    4. As a first time visitor I want the content to be in a consistent and simple structure from page to page. Navigation bar at the top, main body of the page and footer at the bottom.
    5. As a first time visitor the interactive content should be intuitive and not require content heavy text to explain how to use.
-   6. As a first time visitor I want to see specific restaurant content like opening times, directions, the menu, blog and to book a table.
-   7. As a first time visitor I do not want to necessarily register as a user to book a table, nor restrict me from signing up to the newsletter or read the blogs.
-   8. As a first time visitor I have the option to register and sign up to an account which gives me access to further functionality such as manage bookings or like blogs.
+   6. As a first time visitor I want to see specific product details such as an image of the item, price, description.
+   7. As a first time I want to see a link to a social media page to gain further information about the business.
+   8. As a first time visitor I have the option to register and sign up to an account which gives me access to further functionality such as saving items, saving user details, order history, making reviews on the products.
+   9. As a first time visitor I want to make a purchase either as a guest or signed up user.
+   10. As a first time visitor once a purchase is made I want to receive a confirmation email to the email address provided.
   
   #### Returning Visitor Goals
-   1. As a returning visitor I want to know the benefits of registering as a user and then easily see if I am logged in or not. 
-   2. As a returning visitor I want to be able to locate the social media links in order to gain further insight and information but delivered through the different platforms: Youtube, Instagram, Facebook and Twitter.
-   3. As a returning visitor I want to be able to sign up to the newsletter subscription and received email confirmation confirming that I am signed up.
-   4. As a returning visitor having an account I want to be able to book a table reservation but then be able to edit, delete or add bookings to my account and see their status. 
-   5. As a returning visitor having an account I want to be able to like the blog posts as I normally would with any other social media blog site.
+   1. As a returning visitor I want to register for an account so I can save my personal details enabling a faster checkout.
+   2. As a returning visitor I want to be able to sign up to the newsletter subscription.
+   3. As a returning visitor and signed up user I want to be able to leave a review on products.
+   4. As a returning visitor and signed up user I want to be able to save products in my saved item list to refer back to. 
+   5. As a returning visitor and signed up user I want to be able to see my previous order history.
   
-  #### Frequent User Goals
-   1. As a frequent user when I return to the site I want to remain logged in to my account so I can quickly navigate to 'my bookings' page enabling a quick view and access to the bookings functionality.
-   2. As a frequent user I will be reading more content onsite therefore want the blogs to be clicked into to open up the content to read and on the menu page, to click into the meals to read specific information on each meal.
-   3. As a frequent user I want my blog likes to remain at the status I left them last time I was on the site.
-   4. As a frequent user I want the restaurant to update the menu meals regularly to keep me interested along with the blog posts so I know the latest news.
-   5. As a frequent user as I interact with the sites content I want messages to appear on the page informing me if I have submitted or actioned any details.
-  
-  #### Admin User Goals
-   1. As an admin user I can log in allowing access to the websites backend database.
-   2. As an admin user I can view the table bookings made and either approve or delete the booking. 
-   3. As an admin user I can view the users who have signed up to the newsletter and/or registered an account.
-   4. As an admin user I can add, edit or delete meals from the menu and also add, edit and delete meal categories.
-   5. As an admin user I can add, edit or delete blogs. I also have the option to leave as a draft or post to go live on the frontend.
-   6. As an admin user I can add, edit or delete different table configurations for the restaurant allowing users to select the correct table.
+  #### Site Owners / Admin User Goals
+   1. As an admin user I can log in to the admin site allowing access to the applications backend database.
+   2. As an admin user I can view the signed up registered users.
+   3. As an admin user I can view the orders placed by all customers and their details, including delivery info, products bought and total spend.
+   4. As an admin user I can add, edit or delete products listed on the site both on the backend or frontend view, plus add, edit or delete their relevant categories and occasions.
+   5. As an admin user I can review each product and its stock levels which changes based on customer purchases. I can make the product available on site or not based on stock availability.
+   6. As an admin user I can see the reviews made on certain products by which registered account and set its status on whether to show onsite or not.
 
 ## Design
 
- ### Key User Features
-  - Responsive site adapting to the screen size with the content not affected.
-  - An index page providing the first time users with all the key information needed to know what the site is about.
-  - Restaurant menu page outlining the meal choices available with further links to the specific meal page providing more information.
-  - Bookings page for all users (signed up or not) to send a table reservation request.
-  - Newsletter page for all users to sign up to the restaurants newsletter email subscription.
-  - Blog page for users to see the latest blog news sent out by the restaurant.
-  - My Bookings page (only for users signed into their account) allowing users to book, edit or cancel table reservations.
-  - Registration and Log In/Out page for users to sign up or log in to an account. 
-  - Links to external social media pages in the footer so site visitors can navigate (on a different tab) to further restaurant content. 
- 
+ ### Business Model
+  - This application is a B2C e-commerce gift store designed with a simple and minimalist format making the products and all images take centre stage. A consistant and user friendly interface.
+  - All products are hand crafted and only available on Celebrate with Hampers which is a key USP.
+
+ ### Supported Marketing and SEO
+  - Alongside the website, a Facebook Business page has been set up. It can be viewed [here](https://www.facebook.com/Celebrate-with-Hampers-101236122565796)
+  ![Facebook Screenshot](x)
+  - There is functionality for users of the webite to sign up to a subscription mailing service. I have used [Mailchimp](https://mailchimp.com/). As a site owner, you have the ability to see who has signed up, their audience, and the capability to set up new campigns too. [Mailchimp Audience example](x)
+  - Search engine optimisation has been used by creating a sitemap.xml and robots.txt file. Added to the base.html file includes keywords, both short and long and a meta title:
+  ![keywords](x)
+
  ### Structure
-  - The site is made up of an initial home page, menu page, book now page, newsletter page, blog page, register page, log in page and my bookings page for logged in users.
+  - Responsive site adapting to the screen size with the content not affected.
+  - A home page providing the first time users with all the key information needed to know what the site is about.
+  - An all products page listing all the products available to buy and a subsequent product details page telling the user more specific product information.
+  - Further navigation showing products by user need states, either by product category or occasion.
+  - A search bar allowing users to find specific products by key search terms.
+  - A saved item list showing users their selected saved items as they have been browsing the site.
+  - A bag page showing users which items they have added to their bag ready to make a purchase.
+  - Registration and Log In/Out page for users to sign up or log in to an account.
+  - An account page showing users their personal details and order history.
+  - A checkout page giving users the ability to make a purchase.
+  - A newsletter subscription service, provided by mailchimp so user can receive montly newsletters including exclusive offers.
+  - Links to external social media pages in the footer so site visitors can navigate (on a different tab) to further content. Facebook business page created, [found here](https://www.facebook.com/Celebrate-with-Hampers-101236122565796)
   - Each page only has the relevant content expected in order to keep the site simple to understand. Every page is in a consistent style, format and layout aiding usability.
   - Bootstrap grid layout system has been used to create a responsive site.
-  - Layout design of each page:
-    1. Navigation bar at the top with page title to the left and page links to the right.
-    2. Rotational uber image under the navigation bar for inspiration and reaffirming to the user it is a restaurant site.
-    3. Title of the page and paragraph of text advising the user of the page and its use.
+  - Typical page design and layout:
+    1. Site title and logo to the left, search bar in the middle of the screen and key user pages to the right.
+    2. Navigation bar at the top.
+    3. Title of the page so the user knows which page they are on.
     4. Core content of the page.
-    5. Social media footer at the bottom.
-    6. Consistent colour scheme throughout each page specifically on the header / nav bar, page link buttons and footer.
+    5. Subscription sign up on the left of the footer, Social media links in the middle and card logos and privacy policy on the right adhering to GDPR.
+    6. Consistent colour scheme throughout each page as the user goes on their shopping journey.
+ 
+ ### Framework and Database
+  - The Django framework has been used to build the application due to its 'batteries included' ability. The integrated [Allauth](https://django-allauth.readthedocs.io/en/latest/) application has allowed me to set up site authentication and registration.
+  - During the development stage, SQLite was used as it is provided with Django, however once deployed and hosted on Heroku, Postgres was used. Both being relational databases which was required for this project.
+  - The models created and used to generate the database are:
+    - User - built in Django model to store users basic information
+    - UserProfile - to store and update default user details for ordering
+    - Category - to associate a category to a product
+    - Occasion - to set the occasion to a product
+    - Product - the product and its details
+    - Reviews - to allow users to provide a review on a product
+    - SavedListItems - to save items for users
+    - Order - an order is created once a user makes a purchase storing the required information
+    - OrderLineItem - a model to hold the specific ordered product information
+  - My relational database model below was create with [Lucidchart](https://lucid.co/product/lucidchart)
+  ![lucidchart](x)
  
  ### Colour Scheme
   - Colour scheme of the site designed using: https://coolors.co/
-  - The header and nav bar are made up using the leading colour of the site, that being Oxford Blue. Dark Sienna drives the visual presence of the icons onsite, with headings complimented in Charcoal. Both Cadet Blue Crayola and Papaya Whip are supporting colours used sparingly in the lower levels such as blog details.
-  - The button colours led by Bootstraps classes with Secondary a leading complimentary choice. Danger colour has been used appropriately with the cancelling of reservation button, likewise 'update reservation' in their Info class colour.
-  - Each clickable button or heading link with have hover effects be it underline on heading links or colour change on the buttons. This reinforces the clickable element.
+  - A simple 4 colour site which results in the product images and prodcuts themselves standing out off the white page. The logo and brand icon in purple with all text in grey. Black font colour for all navigation and headings to stand our as direction elements on the site.
+  - Additional standard bootstrap colours have been used on messages and admin links such as edit and delete products.
   ![Site Colour Scheme](x)
  
  ### Typography
-  - Google Fonts has been used to stylise the text on site with headings and paragraphs complementing each other. Both modern styles with the headings eye catching and paragraphs content clear to read on smaller screens.
-  - The [Lilita One](x) font is used for the headings throughout the site with Cursive as the fallback.
-  - The [PT Sans Narrow](x) font is used for the content paragraphs of the site with Sans-Serif as the fallback.
+  - Google Fonts has been used to stylise the text on site with only one text styled being used for simplicity. That being the Merriweather font with serif as backup if browsers do not support the main font choice.
+  - [Merriweather](https://fonts.google.com/share?selection.family=Merriweather:wght@700)
  
  ### Imagery
-  - Underneath the navigation bar, there is a Bootstrap carousel which rotates through three images. These are focused on served food within a restaurant sitting and provide a visual representation of the website. This is stored in the Cloudinary database.
-  - Each menu item is supported with a visual image of the dish supporting user experience. This is stored in the Cloudinary database.
-  - Each blog post has a relevant supporting image with ties into the content of the blog. This is stored in the Cloudinary database.
-  - Icons feature heavily in the additional 'detail led' card navigation section on the landing page. Again, rather than text heavily and users having to read the information, these icons give an indication of what the heading link, links to. Icons have been sourced from fontawesome.
-
- ### Admin Database
-  - The backend admin database has been created with the restaurants needs at the forefront. Within the project there are four main apps which have been created individually for simplicity and to separate out the tasks and the storing of data.
-  - Blog database: to store 'draft' and 'posted' blogs created by the restaurant. Functionality allows to store unfinished blogs, post blogs, delete and update blogs. Also gives customers the option to like each blog.
-  - Bookings database: There are two models, one for the restaurant table size choices, the owner can edit, add and delete table sizes to suit whats available and thus allowing customers to book the right table size. The other model for bookings. This is where the admin staff can see the bookings submitted via the form. On here they have the functionality to change the status of the booking to 'confirmed' in order to provide feedback to the customer. The admin staff can also access the customers details if needed to reach out directly to the user who booked the table.
-  - Menu database: Two models, one for meal categories for the admin staff to assign categories to meals i.e starter, main or dessert. The option to add categories, amend or delete. Changes here are directly portrayed on the frontend. The second model for adding meals to the menu. The admin staff can publish the meal or leave as draft, whichever is needed. All relevant meal details found here e.g. price, vegetarian option, meal image, which again will directly show on the sites frontend when published. 
-  - Newsletter database: The model stores all customers who sign up to the newsletter subscription. Admin staff can view customer name and email data if needed.
+  - Images on site are key and what should be grabbing the users eye. They provide inspiration and should give the user enough detail to know what the product is.
+  - Underneath the navigation bar, on the home page, there is a Bootstrap carousel which rotates through three images. These provide a visual representation of the website.
+  - Every listed product should have an image, if not there is a fallback png file. 
+  - Icons feature on the brand logo and within the navigation category and occasion elements. They provide visual backup of the related information shown. Further examples being a heart icon shown on the saved item button, a basket shown on the bag page link and the account page has a human outline logo. Icons have been sourced from [Fontawesome](https://fontawesome.com/).
 
 ## Wireframe
  - Following the initial user stories, design and features. I mocked up the wireframe of the site to incorporate all must have pages and features. 
- - I used a desktop approach for this as it would be the largest screen size to make the content work. Bootstrap grid system helps to flex the content to mobile, so I felt it would be beneficial to design using the most challenging screen size for the project, larger desktop.
-   - [Wireframe Link](x)
+ - I used a desktop approach for this as it would be the largest screen size to make the content work. Bootstrap grid system helps to flex the content to mobile, so I felt it would be beneficial to design using the most challenging screen size for the project first.
+   - [Wireframe Link Desktop](x)
+   - [Wireframe Link Mobile](x)
 
 ## Current Features
 
+ ### Page Header
+ - A responsive page header featured on all pages of the site. As the width exceeds 992px the burger menu is replaced with the title of the site on the left. In the middle is the search bar and on the right includes page links for 'my account', 'saved items' and bag page linking through to checkout. Underneath is a small welcome message to either a guest or signed in user name.
+ - If the user is logged in, the 'my account' drop down menu changes from 'register' and 'log in' to 'account details' and 'log out', if you are a superuser / admin user you will also have the option of 'product management'.
+ 
+ ![Page Header](x)
+ 
  ### Navigation Bar
- - A responsive navigation bar featured on all pages of the site. As the width exceeds 992px the burger menu is replaced with the title of the pages. As you hover over the page links, the text colour brightens.
+ - A responsive navigation bar featured on all pages of the site. As the width exceeds 992px the burger menu is replaced with the page options. As you hover over the page links, the text colour deepens.
  - This section allows the user to easily navigate from page to page without having to use the back button or relooping back to the home page.
- - If the user is logged in, the 'register' and 'log in' pages will revert to 'my bookings' and 'log out'. The 'my bookings' page is restricted so that only logged in users can see. Likewise when 'log in' changes to 'log out', this is a clear indication to the user of their status (signed in or out).
+ - Shopping users main reason to buy decided the navigation links to show. You either want to see 'all products' or shop by 'category' or by a specific occasion. I believe the type of occasion is the main reason to buy mindset, therefore this has been split our on the nav bar into 'birthdays', 'anniversarys', 'thank you', 'celebration' and 'seasonal'.
+ - Included in the navigation bar is a block heading advising the site user of the cost of delivery. An important factor when shopping online.
  
  ![Nav Bar](x)
  
  ### Carousel and Opening Paragraph
- - A carousel image section provides the user with inspirational and relevant content to the reason of the site. The carousel rotates through three images which keeps the user interested and on the site for longer. 
- - Supporting the image carousel is a page header below with supporting text. This is crucial as it informs the user about which page they are on and the reason for the page.
+ - A carousel image section provides the user with inspirational and relevant content to the reason of the site. The carousel rotates through three images which keeps the user interested and should provide inspiration to go and shop. 
+ - Supporting the image carousel is a page header below with supporting text. This is crucial as it informs the user about the site if the images are not enough. Supported with a anchor button taking the user to the product page.
 
- ![Opening Content](x)
+ ![Carousel](x)
 
- ### Detail Navigation
- - An additional navigation section has been built into the home page which supports those users who require further information about the features and pages of the site without having to navigation to every page.
- - A title when clicked on navigates to the relevant page, with an underline hover effect. Each page is supported with a relevant icon, again a further reference point, for those users who prefer or need visual hints.
+ ### Latest Products
+ - A section showcasing 4 of the newest prodcuts available on the site. These are ranked by created date and will automatically update as new products are added into the database.
+ - This will keep returning shoppers interested as they will see new items on the initial landing page. It will also bring seasonality into the store as we go through the year.
+ - All 4 products can be clicked on taking the shopper to the relevant product detail page.
 
- ![Detail Nav](x)
-
- ### Latest News
- - A snapshot of the blogs that have been posted by the restaurant. The users who first land on the page will get a feel for the type of blog / news content that comes out from the restaurant without having to navigate to the blog page specifically.
- - This data is stored in the database and is updated when the restaurant admin post a new blog article. 
-
- ![Latest News](x)
-
- ### Opening Hours and Directions
- - The final piece of information you would expect from a restaurant site, opening and closing hours along with directions to the restaurant.
- - Google Maps API has been used to generate the iframe map. The user can interact with the map and click to open a new tab to take them directly to Google Maps.
-
- ![Hours and Directions](x)
+ ![Latest Products](x)
  
  ### The Footer
- - The footer section houses icons of the relevant social media platforms available which allows the user to click on, thus directing them to the relevant social page. The link will open up in a new tab as it gives the user the option to remain on the current page or click onto the social media tab that has just opened.
- - The footer encourages the user to keep connected via social media. It also gives the user confidence of the business / brand given the multiple social platforms used.
- - The footer is responsive and featured at the bottom on all four pages. The footer is identical on each page to provide a consistent look and ease of navigation.
+ - The footer is responsive and featured at the bottom on all pages.
+ - On the left is an email signup form giving site users the option to subscribe to monthly newsletters.
+ - The middle advises of site copyright and below lists icons of the relevant social media platforms which allows the user to click on, thus directing them to the relevant social page. The link will open up in a new tab as it gives the user the option to remain on the current page or click onto the social media tab that has just opened. A specific Facebook Business page has been created.
+ - On the right of the footer are icons of leading payment providers giving the user subtile information that the site is transactionable. Underneath is the privacy policy conforming to GDPR legislation.
 
  ![Footer](x)
  
- ### Menu Page
- - A Bootstrap accordion component houses all the menu information for the user. The menu categories make up the clickable expand sections which allows the user to only open up the category of food they are interested in. The category heading is also collapsible.
- - Restaurant Admin manage the data shown here to the user. All changes made to both categories or meals will be automatically shown within the accordion.
- - The meal 'view details' button, when clicked on will take the user to the meal detail page showing more information on that specific meal.
+ ### All Products Page
+ - A page to show all products listed on the site. 
+ - Key information shown to the user about how many products on the page, sort by options drop down box and each of the product tiles.
+ - Within the drop down of the 'all products' page, are links to 'by price', 'by occasion' and 'by category' which automatically sorts the products by the chosen page. 
 
- ![Menu](x)
+ ![All Products](x)
 
- ### Book Now Page
- - The Book Now page consists of a form that the user will fill in and submit to the restaurant. Once submitted a message will appear advising the user of the table booking submission and how the restaurant will contact you to confirm, be it via phone if not a signed in user, or via 'My Booking' page, reservation status field.
- - If the user misses a required field the form will advise the user that details are needed and only once the form has been completed, will it get submitted to the restaurant.
+ ### By Category Page
+ - A drop down menu for the user to navigate to the cateogries available, be it 'seasonal', 'alcohol', 'chocolate', 'pamper' or 'baby and kids'.
+ - Each page link is a filtered version of the all products page. Only products will be shown that are relevant to the category selected.
+ - Key information shown to the user about how many products on the page, a link back to the products home page, sort by options drop down box and each of the product tiles.
 
- ![Book Now](x)
+ ![Category](x)
 
- ### Newsletter Page
- - On the Newsletter page a form is presented and once fully completed and submitted will sign up the provided email address to the restaurants newsletter subscription.
+ ### Occasion Pages
+ - For all occasions, a separate navigation link is provided as I beleive this is the key reason to buy mindset. 
+ - Each page link is a filtered version of the all products page. Only products will be shown that are relevant to the occasion page selected.
+ - Key information shown to the user about how many products on the page, a link back to the products home page, sort by options drop down box and each of the product tiles.
 
- ![Newsletter](x) 
+ ![Occasion](x) 
 
- - An email will be sent to the address provided by the user to confirm their sign up.
- 
- ![Email](x)
+ ### Search Page
+ - When a site user enters a search term into the search bar, the application with search for the relevant keyword across the products listed, be it in the title, category, occasion or description. 
+ - The results will be shown once the search icon it clicked, or enter pushed.
+ - Key information shown to the user about how many products on the page and the search term used, a link back to the products home page, sort by options drop down box and each of the product tiles.
 
- ### Blog Page
- - Restaurant posted blogs are shown to users on the Blog page. Every blog is shown on an individual card with a supporting image, author of the blog from the restaurant, the date of the post, how many likes and a small exert on the content. 
- - Each blog title and exert can be clicked on to take the user to the blog detail page. 
- - If the user is logged in then they will be able to 'like' the blog post on the detail page. This gives the restaurant owners good feedback about which news blogs are liked and those that are not. This in turn will help the restaurant to know what their target audience are interested in hearing about.
+ ![Search](x)
 
- ![Blog](x)
+ ### Product Detail Page
+ - When the user clicks on the product image they are taken to the product detail page. Here lists specific information about the product including a description, price, category listed, occasion listed, star rating, add to saved items button, quantity button, keep shopping button, add to bag button and reviews section.
+ - Depending on if the user is logged in, the saved items button will either be displayed if logged in, or will state, 'sign in to add to saved items'. 
+ - Likewise, if the user is signed in, they will be shown a review form to submit a review on the product. This will not be shown if onyl browsing as a guest.
 
- ### Register, Log In / Out Pages
- - If users create an account it allows them to 'like' blog posts and also gives them additional functionality regarding their table bookings. On all pages, a message will show providing the user with feedback on their actions.
- - The register page presents a form to the user to complete to sign up.
- - The log in page asks for the username and password of the account so the user can sign in and interact with the blogs and future bookings.
- - The log out page allows the user to log out of the site.
+ ![Product Detail](x)
+
+ ### My Account = Register, Log In / Out Pages
+ - If you are a guest / logged out user, the register page will apear in the drop down menu under 'My Account'. On here is a form for to the user to complete to sign up.
+ - Once completed the registration form, an email will be sent to the address provided to authenticate the user. Click to link in the email to confirm.
+ - The user can now log in using the log in page.
+ - Once logged in, the log out page will be shown in the drop down menu under the 'My Account' navigation menu.
 
  ![Register](x)
+ ![Registration Email](x)
  ![Log In](x)
  ![Log Out](x)
 
- ### My Bookings Page
- - The 'My Bookings' page will show the signed in user, only their bookings made via the 'Book Now' form. 
- - Bookings submitted on the 'Book Now' form when signed in will appear in a table allowing the user to edit or delete their bookings.
- - There is a button to 'Book a Table' for user to navigate to the booking form page allowing ease of navigation for all things bookings.
- - The details of each booking is shown in a table format, more importantly for the user, they will see the status of the booking, and whether its been confirmed by the restaurant.
+ ### My Account = Account Details
+ - The key benefit of being a signed up user is the ability to store default delivery information and see you previous order history. 
+ - The user can update their saved delivery information by clicking the 'update information button'.
+ - The user is also able to click on any order number which takes them to the confirmed order details relevant to that order.
 
- ![Bookings](x)
- 
+ ![Account Details](x)
+ ![Order Details](x)
+
+ ### My Account = Product Management
+ - If the user is an admin / superuser of the application then a Product Management page will be shown under the My Account drop down menu. This is a frontend page allowing users to add new products into the database. More user friendly than going into the Django Admin pages.
+
+ ![Product Management](x)
+
+ ### Saved Items Page
+ - To access the saved items page and use this functionality of the application, the user needs to be signed in to their account.
+ - This page displays a list of all products selected to 'save item'. The save item button is shown on the product details page.
+ - To un-save the item, a button is displayed on both the product details page, only if the item is already in the list, and on the saved items page.
+ - If no products are in the saved items list then a message will appear on the saved items page.
+
+ ![Saved Items - Nothing](x)
+ ![Saved Items](x)
+
+ ### Shopping Bag
+ - As site users add products to their bag for purchase, these items are listed on the shopping bag page.
+ - This page displays the list of products to be purchased along with the item price, quantity in the bag and subtotal.
+ - The user has the option to update the quantity of the items in the bag or to remove completely. 
+
+ ![Bag](x)
+
+ ### Checkout
+ - Once the user clicks through to the 'Secure Checkout' page, they will be shown a form to complete on the left, asking for delivery and payment information.
+ - On the right of the page is a final summary of the products being purchased, their subtotal cost, delivery cost and grand total.
+ - A 'Complete Order' button allows users to submit the form and make the purchase. Any incorrect data will through an error message, which is displayed to the user.
+ - A successful checkout will advance the user onto the checkout success thank you page showing the user their confirmed order. A subsequent email is also sent to the users provided email address.
+
+ ![Checkout](x)
+ ![Checkout Success](x)
+ ![Checkout Email](x)
+
+ ### Onscreen Prompt Messages
+ - Whilst navigating the site, there are various onscreen messages that will appear in the top right corner of the page.
+ - These messages will be shown on user interactions with the site. For example a success checkout or items added to bag:
+
+ ![Messages-1](x)
+ ![Messages-2](x)
+
  ### Responsive Site
  - The site uses Bootstraps grid layout system to create a responsive site across the various screen sizes. It is a mobile first flexbox grid. Where content flexes it will span down the screen without compromise to the content.
  ### Accessibility
