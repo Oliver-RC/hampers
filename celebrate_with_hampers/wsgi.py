@@ -11,6 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'celebrate_with_hampers.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                      'celebrate_with_hampers.settings')
 
 application = get_wsgi_application()

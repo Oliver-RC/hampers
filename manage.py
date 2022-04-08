@@ -6,7 +6,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'celebrate_with_hampers.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                          'celebrate_with_hampers.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
