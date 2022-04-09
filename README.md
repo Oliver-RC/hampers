@@ -375,7 +375,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  ### Performance Testing
 
   #### Lighthouse - 
-   - Tested the site on Google Developer Tools Lighthouse for desktop and mobile with good results on both. Performance, accessibility and SEO scored top marks. Best practices at 87 due to browser errors but nothing of concern which impacts the site useability and performance. On mobile, performance dropped to 87 due to image size. I have reformatted and reduced pixel sizes without compromising on desktop performance.
+   - Tested the site on Google Developer Tools Lighthouse for desktop and mobile with good results on both. Performance and SEO scored top marks for desktop with Accessibility disappointing only due to the search button using a logo instead of text which hinders screen readers performance. On mobile, performance dropped to 75 due to image size and not next gen format. I have reformatted and reduced pixel sizes without compromising on desktop performance however have been unable to improve the score.
      - Desktop:
        ![Lighthouse Results Desktop](x)
      - Mobile:
