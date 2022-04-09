@@ -1,13 +1,6 @@
 13) https://extendsclass.com/python-formatter.html
-
-
-- stripe payment system
-- amazon aws services
 - django allauth (authorisation functionality)
-- favicon.io
 - reference boutiquo ado as resource and inspirational project
-- jquery for javascript sort functionality
-- lucidchart
 
 
 # Celebrate with Hampers
@@ -269,20 +262,27 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  ![Messages-1](x)
  ![Messages-2](x)
 
+ ### Site Admin
+ - The backend admin of the site allows store owners and admin users to manage the applications data.
+ - Users setting and access level can be defined, customer orders viewed and edited, the full product CRUD management of the store, managing stock levels and product availability and managing customer reviews.
+
+ ![Admin](x)
+
  ### Responsive Site
  - The site uses Bootstraps grid layout system to create a responsive site across the various screen sizes. It is a mobile first flexbox grid. Where content flexes it will span down the screen without compromise to the content.
+ 
  ### Accessibility
- - The carousel images all have an alt attribute taking into account users who are visually impaired. The site has contrasting background colours to text enabling an easy read. Background button colours have been set to match the relevant pages defined colour. Semantic HTML has been used to support machines to understand the layout of the site. All links have hover over effect.
+ - The carousel images all have an alt attribute taking into account users who are visually impaired. 
+ - The site is minimilist by design allowing images to be the focal point. Text secondary colour has been used along with black to stand out off the white background page colour supported with brand purple in places.
+ - Semantic HTML has been used to support machines to understand the layout of the site. 
+ - All links have hover over effect.
  
 ## Features Left to Implement
- - Database functionality on Bookings app:
-   - Restrict dates available for the customer, maximum 3 month future bookings.
-   - Automated unavailable dates for customers once the maximum number of bookings have been hit.
-   - email confirmation sent to the customer once the status of the booking has been updated by the restaurant.
- - Create a customer account page which shows the user their account information, is editable and can be deleted. Also advises if they are signed up to the newsletter subscriptions.
- - Improve user authentication process by introducing forgotten password reset.
- - Newsletter subscription email content to be built into the database allowing the restaurant admin to draft, post and delete content. Once posted the email is sent to the subscribed users.
- - A contact us page for the user to directly get in touch with the restaurant. A standard element on most sites.
+ - Improve product content by incorporating multiple images and video of the product giving the shoppers more information about their potential purchase.
+ - Limit only users who have bought the product to create a review, improving the feedback to other shoppers. As it stands, all logged in users can add reviews showing functionality is there, but in a real world scenario, you would only want customers to review who have bought the product.
+ - For store owners and admin users, include a stock alert for when the stock count number drops below a set figure. This giving the owners a prompt to order more stock in before the line goes out of stock.
+ - Add a blog page to the site which generates better interaction between the store and its customers. It keeps the content of the site up to date and refreshed whilst engaging with the current and new site users.
+ - Better SEO and marketing of the site to improve the google search ranking. 
 
 ## Technologies Used
 
@@ -292,45 +292,44 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
   - [HTML](https://en.wikipedia.org/wiki/HTML5)
   - [CSS](https://en.wikipedia.org/wiki/CSS)
   - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+  - [jQuery](https://en.wikipedia.org/wiki/JQuery)
  
  ### Frameworks, Libraries & Resources Used
   - Django: the framework used to build the project and apps.
   - Heroku: used to deploy my project and incorporate their postgreSQL resource.
-  - Cloudinary: used to store my database images.
+  - Amazon AWS Services: S3 Bucket to store media and static files for the deployed site.
+  - Stripe: used to process the user payments and handle webhooks.
   - Bootstrap: used to support the frontend design and responsive layout of the site. Key components used to improve the UX of the site.
+  - Facebook Business Pages: used to create the Facebook business page of the site.
+  - Mailchimp: used for the subscription service designed for monthly newsletters to signed up users.
   - Google Inspect: used to amend and fix display issues along with reviewing responsive break points on each pages content.
   - Balsamiq: used to create the wireframe during the design process.
+  - Lucidchart: used to brainstorm and design the database models of the site.
   - Gitpod: used for writing the code and using the command line to commit and push to GitHub.
   - Git: used for version control through the gitpod terminal to commit to Git and push to GitHub.
   - GitHub: used to store the projects code after being pushed from Git. Used to host repository.
-  - Google Fonts: used to import the 'Lilita One' font with 'Cursive' as the fallback font for the headings and 'PT Sans Narrow' font with 'Sans-Serif' as the fallback font for the content of the site.
-  - Google Maps API: used to assign an API to my project for google maps and thus allowing an iframe of the map on my home page.
-  - Font Awesome: used for icons in the home page detail navigation section and footer social media links. Needed for site aesthetic and UX purposes.
+  - Google Fonts: used to import the main font for the project.
+  - Font Awesome: used for all icons across the application. Needed for site aesthetic and UX purposes.
   - Coloors: used to select the sites colour palette.
-  - Pexels: used for blog and meal specific images.
-  - Unsplash: used for blog and meal specific images.
+  - Favicon: used for the favicon of the application.
+  - Unsplash: used for carousel and product images
   - Free Formatter: Both html and css code was passed through the formatter to beautify and format my code.
   - ami.responsivedesign used to create my responsive design file.
 
 ## Testing
- - I used a combination of manual and automated testing to ensure the application works as intended and meets the users demands. Each user story was applied to the testing, checking that first time users, returning users, frequent users and admin users saw and used the site as intended.
- - Whilst understanding my user stories, I used the in-built github projects, kanban board, to identify the key building blocks to my site, which aided my progress throughout the build. This made sure that I developed a site fit for my users and when testing the site, the outcome was as expected.
+ - I used a combination of manual and automated testing to ensure the application works as intended and meets the users demands. Each user story was applied to the testing, checking that first time users, returning users and admin users saw and used the site as intended.
+ - The databse models also formed part of the testing making sure the application functioned as needed.
+ - Whilst understanding my user stories, I used the in-built github projects, kanban board, to identify the key building blocks to my site, which aided my progress throughout the build. This made sure that I developed a site fit for my users and when testing the site, the outcome was as expected. In the initial stages of design, I brainstormed using an excel spreadsheet.
  - The Kanban board can be found on this [link](x)
  ![Kanban Board](x)
+ ![Excel User Stories](x)
  - The Lucid chart can be found on this [link](x)
  ![Lucid Chart](x)
  
  ### Manual Testing
-  - Myself and three other family members tested the application. We used a checklist to check all pages loaded correctly with the content expected, the interactive elements worked as intended i.e. buttons, links etc, the forms submitted and authentication worked. The manual tests throughly assess the code written in html, css, python and javascript. Please see the following manual tests checklist and outcome:
+  - Myself and three other family members tested the application. We used a checklist to check all pages loaded correctly with the content expected, the interactive elements worked as intended i.e. buttons, links etc, the forms submitted and authentication worked, payment system processed correctly and successful email sent. The manual tests throughly assess the code written in html, css, python and javascript. Please see the following manual tests checklist and outcome:
   ![Manual Test Checklist](x)
   [Manual Test Link](x)
-  - Examples of manual testing:
-   - Booking form valid submission error checked:
-   ![Booking form valid submission error checked](x)
-   - Booking form valid form submitted message confirming:
-   ![Booking form valid form submitted message confirming](x)
-   - My Bookings page, delete a booking with secondary ask:
-   ![My Bookings page, delete a booking with secondary ask](x)
   - The devices used to test the application on were:
     - Samsung Note 10
     - Samsung S7
@@ -348,10 +347,8 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
     - Safari
  
  ### Automated Testing
-  - I have run a number of automated tests across the views, models and forms files in each app. Whilst my testing was mainly manual based, I wanted to incorporate key automated tests.
-  - Within the views I tested each app view loaded the correct page and template.
-  - In the forms I checked the data entry and excluded fields worked as intended.
-  - I tested the model for the menu and category app, in that it allowed the storing of data and returned the correct string. 
+  - A limited number of automated testing has taken place, checking that the home, product and bag page loads as intended.
+  - Further automated tests would have been necessary if it were not for the substantial and endless manually testing conducted across the various platforms, devices and systems.
 
  ### Google Inspect
   - Constantly using Google Inspect in the devtools to check my layout, make amendments, re-check and therefore delivering an end result that fits the brief and user goals. A mobile first design approach with the help of Bootstrap grid system. 
@@ -360,18 +357,20 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
   - All of my code has been passed through the necessary validators with no errors.
   
   #### HTML - 
-   - All HTML validation was passed through the official W3C validator.
-   ![HTML Validation](x)
+   - All HTML validation was passed through the official W3C validator. Only errors and warnings shown are to do with the implementation of the Django templating language.
+   [HTML Validation](https://validator.w3.org/)
   
   #### CSS - 
    - No errors were found when passing through the official (Jigsaw) validator.
    ![CSS Validation](x)
   
   #### JavaScript - 
-   - JS Hint Checker was used to highlight any functional errors, none returned. Warning about using 'let', with it being available in ES6, however I am happy with my Javascript code functioning as intended.
+   - JS Hint Checker was used to highlight any functional errors, none returned.
 
   #### Python - 
-   - PEP8 online check used to check all my python code written in the app. I can confirm all code meets the PEP8 standard and checked through the online tool. I had to remove whitespace from a number of files along with the line of code being too long. 
+   - PEP8 online check used to check all my python code written in the app. I can confirm all code meets the PEP8 standard and checked through the online tool. I had to remove whitespace from a number of files along with the line of code being too long.
+   - I also used a [Python Formatter](https://extendsclass.com/python-formatter.html) which checked pep8 compliant and supported me to beautify my code.
+   - Flake8 was also run in the terminal to see any issues.
  
  ### Performance Testing
 
