@@ -24,8 +24,8 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
 
  ### User Stories
  - In the planning stages of the application, I used a UX approach by applying various user stories and the different stages of user journeys which helped me to create a list of builds needed to make the application fit for purpose, both for frontend users and backend admin users.
- - I used the Github Projects, Kanban tool as my agile tool to manage the planning and structure of the build. [found here](https://github.com/Oliver-RC/hampers/projects/1)
- - I also documented my key project tasks on excel whilst brainstorming site functionality aligning to my user stories. [found here](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/user-stories.xlsx)
+ - I used the Github Projects, Kanban tool as my agile tool to manage the planning and structure of the build. [found here](https://github.com/Oliver-RC/hampers/projects/1).
+ - I also documented my key project tasks on excel whilst brainstorming site functionality aligning to my user stories. [found here](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/user-stories.xlsx).
 
   #### First Time Visitor Goals
    1. As a first time visitor I want to understand what the site is about and who the site is intended for. Starting with the title and core content of the home page, these elements should give a clear idea and provide inspiration to purchase products available.
@@ -61,7 +61,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
   - All products are hand crafted and only available on Celebrate with Hampers which is a key USP.
 
  ### Supported Marketing and SEO
-  - Alongside the website, a Facebook Business page has been set up. It can be viewed [here](https://www.facebook.com/Celebrate-with-Hampers-101236122565796)
+  - Alongside the website, a Facebook Business page has been set up. It can be viewed [here](https://www.facebook.com/Celebrate-with-Hampers-101236122565796).
   ![Facebook Screenshot1](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/facebook-page-1.JPG)
   ![Facebook Screenshot2](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/facebook-page-2.JPG)
   - There is functionality for users of the webite to sign up to a subscription mailing service. I have used [Mailchimp](https://mailchimp.com/). As a site owner, you have the ability to see who has signed up, their audience, and the capability to set up new campigns too.
@@ -81,7 +81,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
   - An account page showing users their personal details and order history.
   - A checkout page giving users the ability to make a purchase.
   - A newsletter subscription service, provided by mailchimp so user can receive montly newsletters including exclusive offers.
-  - Links to external social media pages in the footer so site visitors can navigate (on a different tab) to further content. Facebook business page created, [found here](https://www.facebook.com/Celebrate-with-Hampers-101236122565796)
+  - Links to external social media pages in the footer so site visitors can navigate (on a different tab) to further content. Facebook business page created, [found here](https://www.facebook.com/Celebrate-with-Hampers-101236122565796).
   - Each page only has the relevant content expected in order to keep the site simple to understand. Every page is in a consistent style, format and layout aiding usability.
   - Bootstrap grid layout system has been used to create a responsive site.
   - Typical page design and layout:
@@ -127,8 +127,8 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
 ## Wireframe
  - Following the initial user stories, design and features. I mocked up the wireframe of the site to incorporate all must have pages and features. 
  - I used a desktop approach for this as it would be the largest screen size to make the content work. Bootstrap grid system helps to flex the content to mobile, so I felt it would be beneficial to design using the most challenging screen size for the project first.
-   - [Wireframe Link Desktop](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/desktop-wireframe.png)
-   - [Wireframe Link Mobile](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/mobile-wireframe.png)
+   - [Wireframe Desktop Link](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/desktop-wireframe.png)
+   - [Wireframe Mobile Link](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/mobile-wireframe.png)
 
 ## Current Features
 
@@ -179,7 +179,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  - Each page link is a filtered version of the all products page. Only products will be shown that are relevant to the category selected.
  - Key information shown to the user about how many products on the page, a link back to the products home page, sort by options drop down box and each of the product tiles.
 
- ![Category](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/checkout.JPG)
+ ![Category](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/category.JPG)
 
  ### Occasion Pages
  - For all occasions, a separate navigation link is provided as I beleive this is the key reason to buy mindset. 
@@ -204,21 +204,29 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
 
  ### My Account = Register, Log In / Out Pages
  - If you are a guest / logged out user, the register page will apear in the drop down menu under 'My Account'. On here is a form for to the user to complete to sign up.
+
+ ![Register](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/register.JPG) 
+
  - Once completed the registration form, an email will be sent to the address provided to authenticate the user. Click to link in the email to confirm.
+
+ ![Registration Email](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/registration-email.JPG)
+
  - The user can now log in using the log in page.
+
+ ![Log In](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/log-in.JPG)
+
  - Once logged in, the log out page will be shown in the drop down menu under the 'My Account' navigation menu.
 
- ![Register](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/register.JPG)
- ![Registration Email](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/registration-email.JPG)
- ![Log In](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/log-in.JPG)
  ![Log Out](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/log-out.JPG)
 
  ### My Account = Account Details
  - The key benefit of being a signed up user is the ability to store default delivery information and see you previous order history. 
  - The user can update their saved delivery information by clicking the 'update information button'.
- - The user is also able to click on any order number which takes them to the confirmed order details relevant to that order.
 
  ![Account Details](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/account-details.JPG)
+
+ - The user is also able to click on any order number which takes them to the confirmed order details relevant to that order.
+
  ![Order Details](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/order-details.JPG)
 
  ### My Account = Product Management
@@ -230,10 +238,12 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  - To access the saved items page and use this functionality of the application, the user needs to be signed in to their account.
  - This page displays a list of all products selected to 'save item'. The save item button is shown on the product details page.
  - To un-save the item, a button is displayed on both the product details page, only if the item is already in the list, and on the saved items page.
+
+ ![Saved Items](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/saved-items2.JPG) 
+
  - If no products are in the saved items list then a message will appear on the saved items page.
 
  ![Saved Items - Nothing](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/saved-items.JPG)
- ![Saved Items](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/saved-items2.JPG)
 
  ### Shopping Bag
  - As site users add products to their bag for purchase, these items are listed on the shopping bag page.
@@ -246,9 +256,11 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  - Once the user clicks through to the 'Secure Checkout' page, they will be shown a form to complete on the left, asking for delivery and payment information.
  - On the right of the page is a final summary of the products being purchased, their subtotal cost, delivery cost and grand total.
  - A 'Complete Order' button allows users to submit the form and make the purchase. Any incorrect data will through an error message, which is displayed to the user.
- - A successful checkout will advance the user onto the checkout success thank you page showing the user their confirmed order. A subsequent email is also sent to the users provided email address.
 
  ![Checkout](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/checkout.JPG)
+
+ - A successful checkout will advance the user onto the checkout success thank you page showing the user their confirmed order. A subsequent email is also sent to the users provided email address.
+
  ![Checkout Success](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/checkout-success.JPG)
  ![Checkout Email](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/checkout-email.JPG)
 
