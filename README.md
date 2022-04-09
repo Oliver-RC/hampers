@@ -14,7 +14,7 @@ CVC: 242 42424
 
 This is a full-stack project built using Python + Django, HTML, CSS and JavaScript and is for educational purposes. 
 
-![Responsive Mockup](x)
+![Responsive Mockup](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/responsive-design.JPG)
 
 ## Showcase
 
@@ -25,7 +25,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  ### User Stories
  - In the planning stages of the application, I used a UX approach by applying various user stories and the different stages of user journeys which helped me to create a list of builds needed to make the application fit for purpose, both for frontend users and backend admin users.
  - I used the Github Projects, Kanban tool as my agile tool to manage the planning and structure of the build. [found here](https://github.com/Oliver-RC/hampers/projects/1)
- - I also documented my key project tasks on excel whilst brainstorming site functionality aligning to my user stories. [found here](x)
+ - I also documented my key project tasks on excel whilst brainstorming site functionality aligning to my user stories. [found here](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/user-stories.xlsx)
 
   #### First Time Visitor Goals
    1. As a first time visitor I want to understand what the site is about and who the site is intended for. Starting with the title and core content of the home page, these elements should give a clear idea and provide inspiration to purchase products available.
@@ -62,10 +62,12 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
 
  ### Supported Marketing and SEO
   - Alongside the website, a Facebook Business page has been set up. It can be viewed [here](https://www.facebook.com/Celebrate-with-Hampers-101236122565796)
-  ![Facebook Screenshot](x)
-  - There is functionality for users of the webite to sign up to a subscription mailing service. I have used [Mailchimp](https://mailchimp.com/). As a site owner, you have the ability to see who has signed up, their audience, and the capability to set up new campigns too. [Mailchimp Audience example](x)
+  ![Facebook Screenshot1](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/facebook-page-1.JPG)
+  ![Facebook Screenshot2](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/facebook-page-2.JPG)
+  - There is functionality for users of the webite to sign up to a subscription mailing service. I have used [Mailchimp](https://mailchimp.com/). As a site owner, you have the ability to see who has signed up, their audience, and the capability to set up new campigns too.
+  ![Mailchimp Audience example](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/mailchimp.JPG)
   - Search engine optimisation has been used by creating a sitemap.xml and robots.txt file. Added to the base.html file includes keywords, both short and long and a meta title:
-  ![keywords](x)
+  ![keywords](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/keywords.JPG)
 
  ### Structure
   - Responsive site adapting to the screen size with the content not affected.
@@ -104,13 +106,13 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
     - Order - an order is created once a user makes a purchase storing the required information
     - OrderLineItem - a model to hold the specific ordered product information
   - My relational database model below was create with [Lucidchart](https://lucid.co/product/lucidchart)
-  ![lucidchart](x)
+  ![lucidchart](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/database-models.png)
  
  ### Colour Scheme
   - Colour scheme of the site designed using: https://coolors.co/
   - A simple 4 colour site which results in the product images and prodcuts themselves standing out off the white page. The logo and brand icon in purple with all text in grey. Black font colour for all navigation and headings to stand our as direction elements on the site.
   - Additional standard bootstrap colours have been used on messages and admin links such as edit and delete products.
-  ![Site Colour Scheme](x)
+  ![Site Colour Scheme](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/celebrate-with-hampers-colour-scheme.png)
  
  ### Typography
   - Google Fonts has been used to stylise the text on site with only one text styled being used for simplicity. That being the Merriweather font with serif as backup if browsers do not support the main font choice.
@@ -125,8 +127,8 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
 ## Wireframe
  - Following the initial user stories, design and features. I mocked up the wireframe of the site to incorporate all must have pages and features. 
  - I used a desktop approach for this as it would be the largest screen size to make the content work. Bootstrap grid system helps to flex the content to mobile, so I felt it would be beneficial to design using the most challenging screen size for the project first.
-   - [Wireframe Link Desktop](x)
-   - [Wireframe Link Mobile](x)
+   - [Wireframe Link Desktop](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/desktop-wireframe.png)
+   - [Wireframe Link Mobile](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/mobile-wireframe.png)
 
 ## Current Features
 
@@ -134,7 +136,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  - A responsive page header featured on all pages of the site. As the width exceeds 992px the burger menu is replaced with the title of the site on the left. In the middle is the search bar and on the right includes page links for 'my account', 'saved items' and bag page linking through to checkout. Underneath is a small welcome message to either a guest or signed in user name.
  - If the user is logged in, the 'my account' drop down menu changes from 'register' and 'log in' to 'account details' and 'log out', if you are a superuser / admin user you will also have the option of 'product management'.
  
- ![Page Header](x)
+ ![Page Header](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/page-header.JPG)
  
  ### Navigation Bar
  - A responsive navigation bar featured on all pages of the site. As the width exceeds 992px the burger menu is replaced with the page options. As you hover over the page links, the text colour deepens.
@@ -142,20 +144,20 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  - Shopping users main reason to buy decided the navigation links to show. You either want to see 'all products' or shop by 'category' or by a specific occasion. I believe the type of occasion is the main reason to buy mindset, therefore this has been split our on the nav bar into 'birthdays', 'anniversarys', 'thank you', 'celebration' and 'seasonal'.
  - Included in the navigation bar is a block heading advising the site user of the cost of delivery. An important factor when shopping online.
  
- ![Nav Bar](x)
+ ![Nav Bar](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/nav-bar.JPG)
  
  ### Carousel and Opening Paragraph
  - A carousel image section provides the user with inspirational and relevant content to the reason of the site. The carousel rotates through three images which keeps the user interested and should provide inspiration to go and shop. 
  - Supporting the image carousel is a page header below with supporting text. This is crucial as it informs the user about the site if the images are not enough. Supported with a anchor button taking the user to the product page.
 
- ![Carousel](x)
+ ![Carousel](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/carousel.JPG)
 
  ### Latest Products
  - A section showcasing 4 of the newest prodcuts available on the site. These are ranked by created date and will automatically update as new products are added into the database.
  - This will keep returning shoppers interested as they will see new items on the initial landing page. It will also bring seasonality into the store as we go through the year.
  - All 4 products can be clicked on taking the shopper to the relevant product detail page.
 
- ![Latest Products](x)
+ ![Latest Products](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/latest-product.JPG)
  
  ### The Footer
  - The footer is responsive and featured at the bottom on all pages.
@@ -163,42 +165,42 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  - The middle advises of site copyright and below lists icons of the relevant social media platforms which allows the user to click on, thus directing them to the relevant social page. The link will open up in a new tab as it gives the user the option to remain on the current page or click onto the social media tab that has just opened. A specific Facebook Business page has been created.
  - On the right of the footer are icons of leading payment providers giving the user subtile information that the site is transactionable. Underneath is the privacy policy conforming to GDPR legislation.
 
- ![Footer](x)
+ ![Footer](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/footer.JPG)
  
  ### All Products Page
  - A page to show all products listed on the site. 
  - Key information shown to the user about how many products on the page, sort by options drop down box and each of the product tiles.
  - Within the drop down of the 'all products' page, are links to 'by price', 'by occasion' and 'by category' which automatically sorts the products by the chosen page. 
 
- ![All Products](x)
+ ![All Products](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/all-products.JPG)
 
  ### By Category Page
  - A drop down menu for the user to navigate to the cateogries available, be it 'seasonal', 'alcohol', 'chocolate', 'pamper' or 'baby and kids'.
  - Each page link is a filtered version of the all products page. Only products will be shown that are relevant to the category selected.
  - Key information shown to the user about how many products on the page, a link back to the products home page, sort by options drop down box and each of the product tiles.
 
- ![Category](x)
+ ![Category](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/checkout.JPG)
 
  ### Occasion Pages
  - For all occasions, a separate navigation link is provided as I beleive this is the key reason to buy mindset. 
  - Each page link is a filtered version of the all products page. Only products will be shown that are relevant to the occasion page selected.
  - Key information shown to the user about how many products on the page, a link back to the products home page, sort by options drop down box and each of the product tiles.
 
- ![Occasion](x) 
+ ![Occasion](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/occasion.JPG) 
 
  ### Search Page
  - When a site user enters a search term into the search bar, the application with search for the relevant keyword across the products listed, be it in the title, category, occasion or description. 
  - The results will be shown once the search icon it clicked, or enter pushed.
  - Key information shown to the user about how many products on the page and the search term used, a link back to the products home page, sort by options drop down box and each of the product tiles.
 
- ![Search](x)
+ ![Search](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/search.JPG)
 
  ### Product Detail Page
  - When the user clicks on the product image they are taken to the product detail page. Here lists specific information about the product including a description, price, category listed, occasion listed, star rating, add to saved items button, quantity button, keep shopping button, add to bag button and reviews section.
  - Depending on if the user is logged in, the saved items button will either be displayed if logged in, or will state, 'sign in to add to saved items'. 
  - Likewise, if the user is signed in, they will be shown a review form to submit a review on the product. This will not be shown if onyl browsing as a guest.
 
- ![Product Detail](x)
+ ![Product Detail](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/product-detail.JPG)
 
  ### My Account = Register, Log In / Out Pages
  - If you are a guest / logged out user, the register page will apear in the drop down menu under 'My Account'. On here is a form for to the user to complete to sign up.
@@ -206,23 +208,23 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  - The user can now log in using the log in page.
  - Once logged in, the log out page will be shown in the drop down menu under the 'My Account' navigation menu.
 
- ![Register](x)
- ![Registration Email](x)
- ![Log In](x)
- ![Log Out](x)
+ ![Register](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/register.JPG)
+ ![Registration Email](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/registration-email.JPG)
+ ![Log In](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/log-in.JPG)
+ ![Log Out](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/log-out.JPG)
 
  ### My Account = Account Details
  - The key benefit of being a signed up user is the ability to store default delivery information and see you previous order history. 
  - The user can update their saved delivery information by clicking the 'update information button'.
  - The user is also able to click on any order number which takes them to the confirmed order details relevant to that order.
 
- ![Account Details](x)
- ![Order Details](x)
+ ![Account Details](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/account-details.JPG)
+ ![Order Details](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/order-details.JPG)
 
  ### My Account = Product Management
  - If the user is an admin / superuser of the application then a Product Management page will be shown under the My Account drop down menu. This is a frontend page allowing users to add new products into the database. More user friendly than going into the Django Admin pages.
 
- ![Product Management](x)
+ ![Product Management](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/product-management.JPG)
 
  ### Saved Items Page
  - To access the saved items page and use this functionality of the application, the user needs to be signed in to their account.
@@ -230,15 +232,15 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  - To un-save the item, a button is displayed on both the product details page, only if the item is already in the list, and on the saved items page.
  - If no products are in the saved items list then a message will appear on the saved items page.
 
- ![Saved Items - Nothing](x)
- ![Saved Items](x)
+ ![Saved Items - Nothing](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/saved-items.JPG)
+ ![Saved Items](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/saved-items2.JPG)
 
  ### Shopping Bag
  - As site users add products to their bag for purchase, these items are listed on the shopping bag page.
  - This page displays the list of products to be purchased along with the item price, quantity in the bag and subtotal.
  - The user has the option to update the quantity of the items in the bag or to remove completely. 
 
- ![Bag](x)
+ ![Bag](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/bag.JPG)
 
  ### Checkout
  - Once the user clicks through to the 'Secure Checkout' page, they will be shown a form to complete on the left, asking for delivery and payment information.
@@ -246,22 +248,22 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  - A 'Complete Order' button allows users to submit the form and make the purchase. Any incorrect data will through an error message, which is displayed to the user.
  - A successful checkout will advance the user onto the checkout success thank you page showing the user their confirmed order. A subsequent email is also sent to the users provided email address.
 
- ![Checkout](x)
- ![Checkout Success](x)
- ![Checkout Email](x)
+ ![Checkout](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/checkout.JPG)
+ ![Checkout Success](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/checkout-success.JPG)
+ ![Checkout Email](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/checkout-email.JPG)
 
  ### Onscreen Prompt Messages
  - Whilst navigating the site, there are various onscreen messages that will appear in the top right corner of the page.
  - These messages will be shown on user interactions with the site. For example a success checkout or items added to bag:
 
- ![Messages-1](x)
- ![Messages-2](x)
+ ![Messages-1](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/messages.JPG)
+ ![Messages-2](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/messages2.JPG)
 
  ### Site Admin
  - The backend admin of the site allows store owners and admin users to manage the applications data.
  - Users setting and access level can be defined, customer orders viewed and edited, the full product CRUD management of the store, managing stock levels and product availability and managing customer reviews.
 
- ![Admin](x)
+ ![Admin](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/admin.JPG)
 
  ### Responsive Site
  - The site uses Bootstraps grid layout system to create a responsive site across the various screen sizes. It is a mobile first flexbox grid. Where content flexes it will span down the screen without compromise to the content.
@@ -313,18 +315,18 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
 
 ## Testing
  - I used a combination of manual and automated testing to ensure the application works as intended and meets the users demands. Each user story was applied to the testing, checking that first time users, returning users and admin users saw and used the site as intended.
+ - The documented features above have been aligned to the user stories showcasing more testing of the site.
  - The databse models also formed part of the testing making sure the application functioned as needed.
  - Whilst understanding my user stories, I used the in-built github projects, kanban board, to identify the key building blocks to my site, which aided my progress throughout the build. This made sure that I developed a site fit for my users and when testing the site, the outcome was as expected. In the initial stages of design, I brainstormed using an excel spreadsheet.
- - The Kanban board can be found on this [link](x)
+ - The Kanban board can be found on this [link](https://github.com/Oliver-RC/hampers/projects/1)
  ![Kanban Board](x)
  ![Excel User Stories](x)
- - The Lucid chart can be found on this [link](x)
- ![Lucid Chart](x)
+ ![Lucid Chart](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/database-models.png)
  
  ### Manual Testing
   - Myself and three other family members tested the application. We used a checklist to check all pages loaded correctly with the content expected, the interactive elements worked as intended i.e. buttons, links etc, the forms submitted and authentication worked, payment system processed correctly and successful email sent. The manual tests throughly assess the code written in html, css, python and javascript. Please see the following manual tests checklist and outcome:
-  ![Manual Test Checklist](x)
-  [Manual Test Link](x)
+  ![Manual Test Checklist](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/manual-testing.JPG)
+  [Manual Test Link](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/manual-testing-checklist.xlsx)
   - The devices used to test the application on were:
     - Samsung Note 10
     - Samsung S7
@@ -357,7 +359,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
   
   #### CSS - 
    - No errors were found when passing through the official (Jigsaw) validator.
-   ![CSS Validation](x)
+   ![CSS Validation](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/wc3-css.JPG)
   
   #### JavaScript - 
    - JS Hint Checker was used to highlight any functional errors, none returned.
@@ -372,9 +374,9 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
   #### Lighthouse - 
    - Tested the site on Google Developer Tools Lighthouse for desktop and mobile with good results on both. Performance and SEO scored top marks for desktop with Accessibility disappointing only due to the search button using a logo instead of text which hinders screen readers performance. On mobile, performance dropped to 75 due to image size and not next gen format. I have reformatted and reduced pixel sizes without compromising on desktop performance however have been unable to improve the score.
      - Desktop:
-       ![Lighthouse Results Desktop](x)
+       ![Lighthouse Results Desktop](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/lighthouse-desktop.JPG)
      - Mobile:
-       ![Lighthouse Results Mobile](x)
+       ![Lighthouse Results Mobile](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/lighthouse-mobile.JPG)
   
   #### Wave - 
    - Tested on [Wave](https://wave.webaim.org/) which helped me with accessibility, making sure my layout and design worked well with screen readers.
