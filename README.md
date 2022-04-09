@@ -57,14 +57,14 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
 ## Design
 
  ### Business Model
-  - This application is a B2C e-commerce gift store designed with a simple and minimalist format making the products and all images take centre stage. A consistant and user friendly interface.
+  - This application is a B2C e-commerce gift store designed with a simple and minimalist format making the products and all images take centre stage. A consistent and user friendly interface.
   - All products are hand crafted and only available on Celebrate with Hampers which is a key USP.
 
  ### Supported Marketing and SEO
   - Alongside the website, a Facebook Business page has been set up. It can be viewed [here](https://www.facebook.com/Celebrate-with-Hampers-101236122565796).
   ![Facebook Screenshot1](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/facebook-page-1.JPG)
   ![Facebook Screenshot2](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/facebook-page-2.JPG)
-  - There is functionality for users of the webite to sign up to a subscription mailing service. I have used [Mailchimp](https://mailchimp.com/). As a site owner, you have the ability to see who has signed up, their audience, and the capability to set up new campigns too.
+  - There is functionality for users of the website to sign up to a subscription mailing service. I have used [Mailchimp](https://mailchimp.com/). As a site owner, you have the ability to see who has signed up, their audience, and the capability to set up new campaigns too.
   ![Mailchimp Audience example](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/mailchimp.JPG)
   - Search engine optimisation has been used by creating a sitemap.xml and robots.txt file. Added to the base.html file includes keywords, both short and long and a meta title:
   ![keywords](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/keywords.JPG)
@@ -80,7 +80,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
   - Registration and Log In/Out page for users to sign up or log in to an account.
   - An account page showing users their personal details and order history.
   - A checkout page giving users the ability to make a purchase.
-  - A newsletter subscription service, provided by mailchimp so user can receive montly newsletters including exclusive offers.
+  - A newsletter subscription service, provided by Mailchimp so user can receive monthly newsletters including exclusive offers.
   - Links to external social media pages in the footer so site visitors can navigate (on a different tab) to further content. Facebook business page created, [found here](https://www.facebook.com/Celebrate-with-Hampers-101236122565796).
   - Each page only has the relevant content expected in order to keep the site simple to understand. Every page is in a consistent style, format and layout aiding usability.
   - Bootstrap grid layout system has been used to create a responsive site.
@@ -110,7 +110,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  
  ### Colour Scheme
   - Colour scheme of the site designed using: https://coolors.co/
-  - A simple 4 colour site which results in the product images and prodcuts themselves standing out off the white page. The logo and brand icon in purple with all text in grey. Black font colour for all navigation and headings to stand our as direction elements on the site.
+  - A simple 4 colour site which results in the product images and products themselves standing out off the white page. The logo and brand icon in purple with all text in grey. Black font colour for all navigation and headings to stand our as direction elements on the site.
   - Additional standard bootstrap colours have been used on messages and admin links such as edit and delete products.
   ![Site Colour Scheme](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/celebrate-with-hampers-colour-scheme.png)
  
@@ -140,7 +140,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  
  ### Navigation Bar
  - A responsive navigation bar featured on all pages of the site. As the width exceeds 992px the burger menu is replaced with the page options. As you hover over the page links, the text colour deepens.
- - This section allows the user to easily navigate from page to page without having to use the back button or relooping back to the home page.
+ - This section allows the user to easily navigate from page to page without having to use the back button or re-looping back to the home page.
  - Shopping users main reason to buy decided the navigation links to show. You either want to see 'all products' or shop by 'category' or by a specific occasion. I believe the type of occasion is the main reason to buy mindset, therefore this has been split our on the nav bar into 'birthdays', 'anniversarys', 'thank you', 'celebration' and 'seasonal'.
  - Included in the navigation bar is a block heading advising the site user of the cost of delivery. An important factor when shopping online.
  
@@ -153,7 +153,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  ![Carousel](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/carousel.JPG)
 
  ### Latest Products
- - A section showcasing 4 of the newest prodcuts available on the site. These are ranked by created date and will automatically update as new products are added into the database.
+ - A section showcasing 4 of the newest products available on the site. These are ranked by created date and will automatically update as new products are added into the database.
  - This will keep returning shoppers interested as they will see new items on the initial landing page. It will also bring seasonality into the store as we go through the year.
  - All 4 products can be clicked on taking the shopper to the relevant product detail page.
 
@@ -163,7 +163,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  - The footer is responsive and featured at the bottom on all pages.
  - On the left is an email signup form giving site users the option to subscribe to monthly newsletters.
  - The middle advises of site copyright and below lists icons of the relevant social media platforms which allows the user to click on, thus directing them to the relevant social page. The link will open up in a new tab as it gives the user the option to remain on the current page or click onto the social media tab that has just opened. A specific Facebook Business page has been created.
- - On the right of the footer are icons of leading payment providers giving the user subtile information that the site is transactionable. Underneath is the privacy policy conforming to GDPR legislation.
+ - On the right of the footer are icons of leading payment providers giving the user subtle information that the site is transactionable. Underneath is the privacy policy conforming to GDPR legislation.
 
  ![Footer](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/footer.JPG)
  
@@ -175,14 +175,14 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  ![All Products](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/all-products.JPG)
 
  ### By Category Page
- - A drop down menu for the user to navigate to the cateogries available, be it 'seasonal', 'alcohol', 'chocolate', 'pamper' or 'baby and kids'.
+ - A drop down menu for the user to navigate to the categories available, be it 'seasonal', 'alcohol', 'chocolate', 'pamper' or 'baby and kids'.
  - Each page link is a filtered version of the all products page. Only products will be shown that are relevant to the category selected.
  - Key information shown to the user about how many products on the page, a link back to the products home page, sort by options drop down box and each of the product tiles.
 
  ![Category](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/category.JPG)
 
  ### Occasion Pages
- - For all occasions, a separate navigation link is provided as I beleive this is the key reason to buy mindset. 
+ - For all occasions, a separate navigation link is provided as I believe this is the key reason to buy mindset. 
  - Each page link is a filtered version of the all products page. Only products will be shown that are relevant to the occasion page selected.
  - Key information shown to the user about how many products on the page, a link back to the products home page, sort by options drop down box and each of the product tiles.
 
@@ -198,12 +198,12 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  ### Product Detail Page
  - When the user clicks on the product image they are taken to the product detail page. Here lists specific information about the product including a description, price, category listed, occasion listed, star rating, add to saved items button, quantity button, keep shopping button, add to bag button and reviews section.
  - Depending on if the user is logged in, the saved items button will either be displayed if logged in, or will state, 'sign in to add to saved items'. 
- - Likewise, if the user is signed in, they will be shown a review form to submit a review on the product. This will not be shown if onyl browsing as a guest.
+ - Likewise, if the user is signed in, they will be shown a review form to submit a review on the product. This will not be shown if only browsing as a guest.
 
  ![Product Detail](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/product-detail.JPG)
 
  ### My Account = Register, Log In / Out Pages
- - If you are a guest / logged out user, the register page will apear in the drop down menu under 'My Account'. On here is a form for to the user to complete to sign up.
+ - If you are a guest / logged out user, the register page will appear in the drop down menu under 'My Account'. On here is a form for to the user to complete to sign up.
 
  ![Register](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/register.JPG) 
 
@@ -282,7 +282,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  
  ### Accessibility
  - The carousel images all have an alt attribute taking into account users who are visually impaired. 
- - The site is minimilist by design allowing images to be the focal point. Text secondary colour has been used along with black to stand out off the white background page colour supported with brand purple in places.
+ - The site is minimalist by design allowing images to be the focal point. Text secondary colour has been used along with black to stand out off the white background page colour supported with brand purple in places.
  - Semantic HTML has been used to support machines to understand the layout of the site. 
  - All links have hover over effect.
  
@@ -328,7 +328,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
 ## Testing
  - I used a combination of manual and automated testing to ensure the application works as intended and meets the users demands. Each user story was applied to the testing, checking that first time users, returning users and admin users saw and used the site as intended.
  - The documented features above have been aligned to the user stories showcasing more testing of the site.
- - The databse models also formed part of the testing making sure the application functioned as needed.
+ - The database models also formed part of the testing making sure the application functioned as needed.
  - Whilst understanding my user stories, I used the in-built github projects, kanban board, to identify the key building blocks to my site, which aided my progress throughout the build. This made sure that I developed a site fit for my users and when testing the site, the outcome was as expected. In the initial stages of design, I brainstormed using an excel spreadsheet.
  - The Kanban board can be found on this [link](https://github.com/Oliver-RC/hampers/projects/1)
  ![Kanban Board](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/kanban.JPG)
@@ -336,7 +336,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  ![Lucid Chart](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/database-models.png)
  
  ### Manual Testing
-  - Myself and three other family members tested the application. We used a checklist to check all pages loaded correctly with the content expected, the interactive elements worked as intended i.e. buttons, links etc, the forms submitted and authentication worked, payment system processed correctly and successful email sent. The manual tests throughly assess the code written in html, css, python and javascript. Please see the following manual tests checklist and outcome:
+  - Myself and three other family members tested the application. We used a checklist to check all pages loaded correctly with the content expected, the interactive elements worked as intended i.e. buttons, links etc, the forms submitted and authentication worked, payment system processed correctly and successful email sent. The manual tests thoroughly assess the code written in html, css, python and javascript. Please see the following manual tests checklist and outcome:
   ![Manual Test Checklist](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/manual-testing.JPG)
   [Manual Test Link](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/manual-testing-checklist.xlsx)
   - The devices used to test the application on were:
@@ -439,13 +439,13 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
 ## Credits
  - When building the application I have constantly had to refer to a number of documents and sites of resource online in order to overcome challenges in my code. Below is a list of credits and resources used.
 
-  - [Code Institue sample README file](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md) helped me to further build my own README. 
+  - [Code Institute sample README file](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md) helped me to further build my own README. 
   - [W3schools](https://www.w3schools.com/) for various code information and trouble shooting, especially python.
   - [Django Documentation](https://docs.djangoproject.com/en/4.0/) for various code information and trouble shooting with the Django framework.
   - Code Institue Boutique Ado project for setting me up in the right direction and getting the base of the application to where I needed it.
 
  ## Acknowledgements
-  - Code Institue Slack Community - A great resource and helpful community supported me through the challenges encountered.
+  - Code Institute Slack Community - A great resource and helpful community supported me through the challenges encountered.
   - Tutor Support - amazing help from a number of tutors when I really did struggle to overcome the issues myself, shout out to Ger and Ed especially!
 
-**This project is for educational use only and was created for the Code Institue Portfolio Project 5: E-commerce Applications**
+**This project is for educational use only and was created for the Code Institute Portfolio Project 5: E-commerce Applications**
