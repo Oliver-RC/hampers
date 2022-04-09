@@ -327,7 +327,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
 
 ## Testing
  - I used a combination of manual and automated testing to ensure the application works as intended and meets the users demands. Each user story was applied to the testing, checking that first time users, returning users and admin users saw and used the site as intended.
- - The documented features above have been aligned to the user stories showcasing more testing of the site.
+ - The documented features above have been aligned to the user stories showcasing more testing of the site both during developement in the local environement, but more importantly, that the final deployed application matches the developement version, both of which fully function as intended.
  - The database models also formed part of the testing making sure the application functioned as needed.
  - Whilst understanding my user stories, I used the in-built github projects, kanban board, to identify the key building blocks to my site, which aided my progress throughout the build. This made sure that I developed a site fit for my users and when testing the site, the outcome was as expected. In the initial stages of design, I brainstormed using an excel spreadsheet.
  - The Kanban board can be found on this [link](https://github.com/Oliver-RC/hampers/projects/1)
