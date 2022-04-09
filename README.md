@@ -319,8 +319,8 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  - The databse models also formed part of the testing making sure the application functioned as needed.
  - Whilst understanding my user stories, I used the in-built github projects, kanban board, to identify the key building blocks to my site, which aided my progress throughout the build. This made sure that I developed a site fit for my users and when testing the site, the outcome was as expected. In the initial stages of design, I brainstormed using an excel spreadsheet.
  - The Kanban board can be found on this [link](https://github.com/Oliver-RC/hampers/projects/1)
- ![Kanban Board](x)
- ![Excel User Stories](x)
+ ![Kanban Board](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/kanban.JPG)
+ ![Excel User Stories](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/user-stor.JPG)
  ![Lucid Chart](https://github.com/Oliver-RC/hampers/blob/main/readme_assets/database-models.png)
  
  ### Manual Testing
