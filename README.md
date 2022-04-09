@@ -1,8 +1,3 @@
-13) https://extendsclass.com/python-formatter.html
-- django allauth (authorisation functionality)
-- reference boutiquo ado as resource and inspirational project
-
-
 # Celebrate with Hampers
 
 Celebrate with Hampers is an e-commerce gift shop website for customers seeking to buy gifts for all occasions online. Our USP is that you can not buy these products anywhere else online as they are hand made specifically for the Celebrate with Hampers customer. 
@@ -382,16 +377,11 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
        ![Lighthouse Results Mobile](x)
   
   #### Wave - 
-   - Tested on [Wave](https://wave.webaim.org/) which helped me with accessibility, making sure my layout and design worked well with screen readers. No errors detected or contrast errors.
-   ![Wave](x)
+   - Tested on [Wave](https://wave.webaim.org/) which helped me with accessibility, making sure my layout and design worked well with screen readers.
  
  ### Bugs and Fixes
-  - When I initially deployed the app to Heroku, the main carousel images in the base.html file did not load nor did many css properties. I had to remove the image files stored in the static folder and upload to cloudinary, then amend the image source link.
-  - When reviewing the site content, the images of both the blog detail page and meal detail page would shrink the image to fit. I have changed the viewport height in order to show the images correctly.
-  - In the 'My Bookings' page, when using a small screen, the user does have to scroll right to see all the boking details. I have reduced the size of the table however I have not been able to completely change the layout to display vertically. I have used Bootstraps responsive class however, a further fix is needed to improve the UX on this page.
-  - Part way through the development when migrating a new model change, it encountered an integrity error. This resulted in having to dumpdata from the other models and saving the information in a json file. I have kept the json data files in the app for safe keeping. 
-  - On the home page, latest news feed, the tiles overspill making them look off center on smaller devices. I believe this is a bug as I have tried, max-width, viewport width without any success.
-  - The menu page accordion, should normally be displayed open, so the blue hover colour is displayed, however I wanted the accordion to be closed when the page opened so the user could see the menu categories. There is a bug that will not allow me to change the blue hover. A further fix is required to improve the UX.
+  - During the Saved Items functionality within the products view, getting the button to change on the product detail html page, from 'add to saved items' to 'remove from saved items' caused difficulties. With tutor support we had to change the coding of the function in order to get the button working as intended.
+  - As the three images on the standard Bootstrap carousel rotated, the image would jump out of its margins and then back in once the image had changed. This bug was fixed by amended the width of the container to match the width of its children elements. 
 
 ## Deployment
  - I used Github to manage the development stages, pushing my updated files to the main branch of the repository. It is the Github main branch that has been used to deploy the app through Heroku. Steps below show the process in the deployment stages.
@@ -405,7 +395,7 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
  
  ### Cloning
   - To make a local clone:
-   - Log into GitHub or create an account and navigate to the gitpod repository [here](x).
+   - Log into GitHub or create an account and navigate to the gitpod repository [here](https://github.com/Oliver-RC/hampers).
    - Under the repository name, above the list of files, click on a button called 'Clone'.
    - If cloning with HTTPS, make sure HTTPS is underlined and then click on the clipboard icon to copy. Once clicked the icon will turn to a tick.
    - Open your local IDE open the terminal.
@@ -422,20 +412,26 @@ A deployed link to the website can be found [here](https://celebrate-with-hamper
    - Settings and database complete, now to deploy. Connect heroku to your github repository by going to the deploy tab, Deploy a GitHub branch manually. Chose the branch 'main' and click 'deploy branch' button.
    - Heroku will now build the app. Once the build log has completed, you can then click on 'view' to open up your application.
 
+ ### Amazon AWS Service for Media and Static files
+  - The deployed version of this application has its static CSS and media files hosted to it via a web based service called Amazon Web Services, S3 Bucket. To use this service:
+   - Follow the steps on the AWS website to create an account.
+   - Search for S3 service to create a new Bucket. Give it a matching name to your application.
+   - Configure the bucket to enable static web hosting and enable public access.
+   - Navigate to the IAM application and create a user, a group and a policy so they can access the S3 bucket.
+   - Set the AmazonS3FullAccess for the user.
+   - Copy the AWS ACCESS and SECRET keys as config vars in Heroku. You will need to install boto3 and django-storages in your django workspace.
+   - Back to the S3 bucket, create a new folder for you media files and manually upload.
+
 ## Credits
  - When building the application I have constantly had to refer to a number of documents and sites of resource online in order to overcome challenges in my code. Below is a list of credits and resources used.
 
-  - [Code Institue sample README file](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md) helped me to further build my own README.
-  - [Code Institue old sample README file](https://github.com/Code-Institute-Solutions/SampleREADME#readme) helped me with additional content to further build my own README.
-  - [Wikipedia](https://en.wikipedia.org/wiki/Main_Page) was referenced for the languages used in this project. 
+  - [Code Institue sample README file](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md) helped me to further build my own README. 
   - [W3schools](https://www.w3schools.com/) for various code information and trouble shooting, especially python.
   - [Django Documentation](https://docs.djangoproject.com/en/4.0/) for various code information and trouble shooting with the Django framework.
-  - [Harvester](https://www.harvester.co.uk/) for the initial design and content research of a restaurant app.
-  - [Dennis Ivy](https://dennis-sourcecode.herokuapp.com/) Django videos to help go through the framework and understand various key features.
+  - Code Institue Boutique Ado project for setting me up in the right direction and getting the base of the application to where I needed it.
 
  ## Acknowledgements
-  - Brian Macharia - Mentor support. A thank you for your guidance throughout the early build of the project.
   - Code Institue Slack Community - A great resource and helpful community supported me through the challenges encountered.
-  - Tutor Support - amazing help from a number of tutors when I really did struggle to overcome the issues myself.
+  - Tutor Support - amazing help from a number of tutors when I really did struggle to overcome the issues myself, shout out to Ger and Ed especially!
 
 **This project is for educational use only and was created for the Code Institue Portfolio Project 5: E-commerce Applications**
