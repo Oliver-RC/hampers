@@ -1,1 +1,0 @@
-web: gunicorn celebrate_with_hampers.wsgi:application
